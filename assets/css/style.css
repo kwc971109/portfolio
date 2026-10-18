@@ -319,3 +319,4 @@ details.data-table{margin-top:12px}details.data-table summary{cursor:pointer;fon
 .hero-credit{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:14px;z-index:1;margin:0;font-size:12px;color:rgba(255,255,255,.78)}
 @media(max-width:640px){.br-wide{display:none}.hero-credit{left:max(16px,env(safe-area-inset-left,0px))}}
 .case ul.retro{margin:0 0 14px;padding-left:20px;max-width:760px;color:var(--ink-2)}.case ul.retro li{margin:6px 0}
+.yy-duo img{aspect-ratio:19/10;object-fit:cover;object-position:30% 50%}.yy-duo figure:last-child img{object-position:50% 35%}

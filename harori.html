@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>하로리 선셋 페스타 | 경원철 포트폴리오</title>
+  <meta name="description" content="드래곤네스트 2026 이벤트 '하로리 선셋 페스타' 레벨 디자인 케이스 스터디">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body><a class="skip-link" href="#main-content">본문 바로가기</a>
+<div class="draft-banner">검토 초안 · 2026.10.18 · PANOPTICON 최종 영상 반영 전</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>경원철</b><span>CONTENT DESIGNER</span></a>
+    <nav class="nav">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about" class="hide-sm">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="case-hero">
+  <img src="assets/img/harori-overview.jpg" alt="하로리 선셋 페스타 일반 존. 노을 진 섬에서 굿즈를 모으며 달리는 플레이어">
+  <div class="cap">
+    <div class="wrap">
+      <a class="back" href="index.html#projects">← 전체 프로젝트</a>
+      <p class="eyebrow" style="color:#ffd2c6">Case 01 · Level Design · Live</p>
+      <h1>하로리 선셋 페스타</h1>
+      <p>일일 1회 입장·2분 제한의 이벤트에서 반복 플레이에 변주를 주기 위해, 고정 레이싱 코스를 섬 전체를 누비는 비선형 수집 레벨로 다시 설계했습니다.</p>
+    </div>
+  </div>
+</div>
+
+<main id="main-content" class="case">
+  <div class="wrap">
+    <dl class="spec">
+      <div><dt>GAME</dt><dd>드래곤네스트 (PC 액션 MMORPG)</dd></div>
+      <div><dt>FORMAT</dt><dd>1인 · 2분 · 일일 1회 (QA 사양)</dd></div>
+      <div><dt>LIVE</dt><dd>2026.10.07 ~ 11.05</dd></div>
+      <div><dt>DESIGN</dt><dd>기획 v1.0 (7월) · QA (9월)</dd></div>
+    </dl>
+    <p class="role-line"><b>담당 · 기획 단독</b> · 아트(모델링·애니메이션·폴리싱·최적화)와 프로그래머(트리거 API) 업무를 뺀 나머지를 기획부터 배치까지 혼자 맡았습니다. 아래 ROLE 표에 정리했습니다.</p>
+
+    <p class="evidence-note">레벨 구성의 의도는 7월 v1.0 기획안, 아래 플레이 규칙은 9월 QA 사양을 기준으로 정리했습니다. QA와 실제 라이브의 모든 수치가 같은지는 최종 확인할 항목입니다.</p>
+
+
+    <section id="role">
+      <div class="num">ROLE</div>
+      <h2>기획부터 배치까지 직접 한 일</h2>
+      <p>사내 툴 용어 옆에 언리얼 엔진 기준으로 비슷한 기능을 함께 적었습니다.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="하로리 작업 분담"><table class="t t-fluid"><thead><tr><th>구분</th><th>내용</th></tr></thead><tbody>
+        <tr><td class="k">지형·배치</td><td>브러시로 맵 지형 편집(UE의 랜드스케이프), 프랍 배치(UE의 액터 배치). 아트팀이 폴리싱</td></tr>
+        <tr><td class="k">객체별 트리거</td><td>폴리싱된 레벨을 받아 미리 준비한 아이템의 브로큰 효과, 점프대 발사 같은 효과를 객체마다 적용(UE의 블루프린트 기능). 스포트라이트 등 라이트 이펙트도 객체에 직접 부착</td></tr>
+        <tr><td class="k">몬스터</td><td>아트팀이 준 모델링·애니메이션으로 액트를 구성하고 액션, 이펙트, AI를 제작. 이벤트의 몬스터 전부 직접 제작</td></tr>
+        <tr><td class="k">맵 제어·UI</td><td>맵 입장, 점수·게이지 UI 표시와 점수·게이지 상승, 스테이지 시작과 종료, 입장과 퇴장, 낙하 시 위치 재배치</td></tr>
+        <tr><td class="k">보상·튜토리얼</td><td>모든 배치, 보상 테이블과 보상 연결, 튜토리얼, 몬스터·아이템 위치</td></tr>
+        <tr><td class="k">연출</td><td>카메라 배치, 대사 표시, 불꽃놀이 연출, BGM 배치</td></tr>
+        <tr><td class="k">아트팀</td><td>모델링·애니메이션, 레벨 폴리싱, 컬링 거리와 배경 물 객체 배치 등 최적화, UI 디자인</td></tr>
+        <tr><td class="k">프로그래머</td><td>트리거에 쓰이는 API 개발. 기획자는 이 API로 Lua 스크립트 트리거를 만들 수 있으며, 이번에는 게임이 오래돼 신규 트리거 없이 기존 트리거만 사용</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/pRq1Fm1yATo" title="하로리 선셋 페스타 라이브 플레이 영상" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- 01 -->
+    <section>
+      <div class="num">01 · PROBLEM</div>
+      <h2>지난 두 번의 하로리 이벤트에서 시작했습니다</h2>
+      <p class="big">레이싱의 쉬운 조작과 속도감은 살리고, <strong>"한 달 내내 같은 루트"</strong>와 <strong>"피하기만 하는 장애물"</strong>을 바꾸는 것이 목표였습니다.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="가로 스크롤 가능한 표">
+        <table class="t">
+          <thead><tr><th></th><th>장점</th><th>아쉬운 점</th></tr></thead>
+          <tbody>
+            <tr><td class="k">1차 · 디펜스</td><td>하로리 캐릭터성 강화, 대량의 적을 한 번에 처치하는 시원함</td><td>직업마다 다른 스킬 범위, 피하기 어려운 응원봉, 시야를 가리는 구조, 지루한 보너스 스테이지</td></tr>
+            <tr><td class="k">2차 · 레이싱</td><td>전투와 다른 신선함, 레이싱 특유의 속도감, 쉬운 조작</td><td>이벤트 기간 내내 고정된 루트를 반복</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section>
+      <div class="num">02 · DIRECTION</div>
+      <h2>최적의 동선으로 굿즈를 모으자</h2>
+      <p><strong>목표</strong>는 2분 안에 굿즈를 최대한 많이 모으는 것, <strong>핵심 플레이</strong>는 고정된 지형 안에서 배치가 달라지는 스테이지에서 스스로 파밍 동선을 짜는 것입니다. 이를 세 가지 키워드로 나눴습니다.</p>
+      <div class="pillars">
+        <div class="pillar"><div class="k">LEVEL</div><h3>능동적 탐사</h3><p>정해진 코스 대신 섬 전체를 쓰는 오픈형 스테이지. 플레이어가 효율적인 경로를 직접 개척합니다.</p></div>
+        <div class="pillar"><div class="k">SYSTEM</div><h3>쾌적한 주행</h3><p>장애물에 기믹을 부여하고 부스트 연계로 이어 달리게 해, 방해받는 불쾌함 대신 속도감을 남깁니다.</p></div>
+        <div class="pillar"><div class="k">CONTENT</div><h3>반복 속 변주</h3><p>매 판 파밍 루트와 아이템 구성이 달라지되, 변수 때문에 손해 보는 느낌은 최소화합니다.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="num">03 · DESIGN TO QA</div>
+      <h2>기획안과 QA 단계의 규칙을 구분했습니다</h2>
+      <p>비선형 수집과 부스트 연계라는 방향은 유지되지만, 7월 기획안과 9월 QA 사양에는 세부 규칙의 차이가 있습니다. 아래의 차이는 원문 대조로 확인했으며, 변경 이유와 본인 판단은 회고에서 보완합니다.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="기획안과 QA 사양 비교"><table class="t"><thead><tr><th>항목</th><th>7월 기획 v1.0</th><th>9월 QA 사양</th></tr></thead><tbody>
+      <tr><td class="k">스피드 아이템</td><td>부스트 5초</td><td>부스트 3초</td></tr>
+      <tr><td class="k">상인 부하</td><td>20초·80초 등장, 3회 타격 기절</td><td>10~40초·70~100초 사이 각각 2마리 등장, 두 마리 모두 기절 시 개방</td></tr>
+      <tr><td class="k">히든 상세</td><td>조건형·랜덤형 예시</td><td>숨은 발판 두 곳이 매 판 함께 존재</td></tr>
+      </tbody></table></div>
+      <p class="evidence-note">QA 개요에는 확률형 돌발 미션 문구도 남아 있어 히든 상세와의 관계를 확인해야 합니다. 여기서는 구체적인 히든 상세 규칙을 설명합니다.</p>
+    </section>
+
+    <!-- 04 -->
+    <section>
+      <div class="num">04 · LEVEL LAYOUT</div>
+      <h2>넓은 평지를 언덕이 감싸는 섬</h2>
+      <p>중앙 <strong>일반 존</strong>은 주행을 막는 지형·충돌 프랍을 최소화한 넓은 평지로 설계하고, 외곽 <strong>스페셜 존</strong>에는 고저차와 점프 구간을 배치했습니다. v1.0 기획안은 메인 구역 한 바퀴 순환을 약 20초로 계획했습니다. 실제 플레이 시간을 측정한 값은 아닙니다.</p>
+      <figure class="narrow">
+        <img src="assets/img/harori-zonemap.jpg" alt="스테이지 탑뷰 블록아웃. 중앙 파란 일반 존, 외곽 붉은 스페셜 존, 초록 스타트 존, 노란 클리어 존" loading="lazy">
+        <figcaption>v1.0 기획 단계의 스테이지 탑뷰 블록아웃</figcaption>
+      </figure>
+      <div class="legend">
+        <span><i style="background:#62c46b"></i>스타트 존 · 튜토리얼 선택</span>
+        <span><i style="background:#6f6fc9"></i>일반 존 · 메인 주행</span>
+        <span><i style="background:#c9705c"></i>스페셜 존 · 조건부 개방</span>
+        <span><i style="background:#e3d35a"></i>클리어 존 · 보상 정산</span>
+      </div>
+
+      <h3>이상적인 진행 순서</h3>
+      <p>스타트 존 → 일반 존 수집 → 해당 시간대 상인 부하 두 마리 모두 기절 → 스페셜 존 진입 → 일반 존 복귀 → 종료 조건 달성 시 클리어 존. QA 사양은 전반 10~40초, 후반 70~100초 사이에 상인 부하가 각각 두 마리씩 등장하도록 정의합니다.</p>
+
+      <h3>기획 v1.0의 굿즈 분포 가중치</h3>
+      <div class="dist">
+        <div class="bar" role="img" aria-label="일반 전반40, 일반 후반40, 스페셜1 30, 스페셜2 30, 히든20퍼센트. 합계160퍼센트">
+          <span style="width:25%;background:#8080d1">40%</span>
+          <span style="width:25%;background:#8b8bd6">40%</span>
+          <span style="width:18.75%;background:#c9705c">30%</span>
+          <span style="width:18.75%;background:#d98f7e">30%</span>
+          <span style="width:12.5%;background:#e8452c">20%</span>
+        </div>
+        <div class="marker"><span>최대 보상 기준 100%</span></div><p class="dist-key">일반 존: 전반40% + 후반40%<br>스페셜 존: 각30% · 히든: 20%</p>
+      </div>
+      <p>기획안의 분포 가중치를 합하면 <strong>160%</strong>입니다(40% × 2 + 30% + 30% + 20%). 이는 명세상 배치 비중의 합이며, 실제 획득량이나 보상 달성률을 측정한 수치가 아닙니다. 분포 가중치의 산정 근거와 실제 배치량은 추가 확인할 항목입니다.</p>
+    </section>
+
+    <!-- 05 -->
+    <section>
+      <div class="num">05 · CORE MECHANIC</div>
+      <h2>피하던 장애물을, 부딪힐수록 이득인 자원으로</h2>
+      <p>2차 이벤트의 극성 팬은 주행을 방해하는 회피 대상이었고, 부스트는 피격을 막는 용도였습니다. 이번에는 <strong>부스트 상태로 부딪히면 팬이 기절하고 부스트가 연장</strong>되도록 바꿔, 방해 요소를 콤보를 이어 가는 징검다리로 재정의했습니다.</p>
+      <div class="loop">
+        <div><b>부스트 획득</b>스피드 아이템 접촉 시 3초간 이동 속도 증가·무적 (QA)</div>
+        <div><b>극성 팬에 돌진</b>부스트 상태로 접촉하면 피격 대신 팬이 기절</div>
+        <div><b>보상</b>부스트 지속 시간 연장·보너스 게이지 상승 (QA)</div>
+        <div><b>다음 팬으로</b>최적의 동선으로 팬을 이어 밟을수록 부스트 유지</div>
+      </div>
+      <p class="loop-note">↺ 방해 요소 → 주행을 이어 주는 징검다리</p>
+
+      <div class="table-scroll" tabindex="0" role="region" aria-label="가로 스크롤 가능한 표">
+        <table class="t">
+          <thead><tr><th>오브젝트</th><th>행동</th><th>부스트로 기절 시</th><th>규칙의 역할</th></tr></thead>
+          <tbody>
+            <tr><td class="k">응원하는 극성 팬</td><td>제자리에서 팔을 휘두름 (근접)</td><td>부스트 연장 · 게이지 상승</td><td>부스트 연계의 기본 발판</td></tr>
+            <tr><td class="k">손버릇이 나쁜 극성 팬</td><td>제자리에서 응원봉 투척 (원거리)</td><td>부스트 연장 · 게이지 상승</td><td>원거리 방해를 부스트 연계에 활용</td></tr>
+            <tr><td class="k">상인 부하</td><td>시간대별 2마리 등장, 서로 다른 이동 행동</td><td>부스트로 두 마리 모두 기절 → 해당 스페셜 존 개방</td><td>스페셜 존을 여는 열쇠. 쫓을지 말지가 판단 요소</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="num">CORE CHOICE · QA RULE</div>
+      <h2>200점을 채우기 전에, 보너스 게이지도 확인</h2>
+      <p>굿즈 <strong>200점을 모으면 남은 시간과 관계없이 종료</strong>됩니다. 종료 시 보너스 게이지가 차지 않았다면 보너스 상자는 나오지 않습니다. 따라서 규칙상 점수 수집과 팬을 통한 게이지 확보를 함께 고려해야 합니다.</p>
+      <div class="callout"><div class="k">동선에서 확인할 두 가지</div><p>굿즈는 점수 보상에, 팬 기절은 부스트 유지와 보너스 게이지에 연결됩니다. 이 상호작용은 QA에 명시된 규칙이며, 실제 이용자의 선택이나 설계 당시의 의도를 측정한 결과는 아닙니다.</p></div>
+    </section>
+
+    <!-- 06 -->
+    <section>
+      <div class="num">06 · VARIATION</div>
+      <h2>위치는 고정, 내용은 랜덤</h2>
+      <p>랜덤이 지나치면 운이 실력을 덮고, 없으면 한 달 내내 같은 판이 됩니다. 그래서 <strong>무엇을 랜덤으로 둘지</strong>를 플레이어 경험 기준으로 골랐습니다.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="가로 스크롤 가능한 표">
+        <table class="t">
+          <thead><tr><th>구분</th><th>요소</th><th>이유</th></tr></thead>
+          <tbody>
+            <tr><td class="k">고정</td><td>기믹이 등장하는 위치 (기획 방향)</td><td>맵을 익힐수록 동선이 좋아지는 학습 보상</td></tr>
+            <tr><td class="k">랜덤</td><td>기믹의 종류와 등장 여부 (기획 방향)</td><td>매 판 다른 판단을 요구</td></tr>
+            <tr><td class="k">시간 변화</td><td>일반 존 배치 변화, 전반·후반 상인 부하 등장 구간</td><td>한 판 안에서도 후반에 동선을 다시 짜게 함</td></tr>
+            <tr><td class="k">히든 · 발판 1</td><td>나무 뒤 숨은 발판 접촉 시 부스트</td><td>매 판 존재하는 탐색 보상 (QA 상세)</td></tr>
+            <tr><td class="k">히든 · 발판 2</td><td>물속 발판 접촉 시 숨은 굿즈로 이어지는 배지 등장</td><td>숨겨진 수집 경로를 발견 (QA 상세)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 07 -->
+    <section>
+      <div class="num">07 · LEVEL DETAIL</div>
+      <h2>조작은 요구하되, 실패는 가볍게</h2>
+      <p>가벼운 이벤트라는 방향을 유지하면서 점프 조작을 넣기 위해, v1.0의 점프 구간을 아래와 같이 정의했습니다. 구역별 낙하 처리는 실제 구현과 대조할 항목입니다.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="가로 스크롤 가능한 표">
+        <table class="t">
+          <tbody>
+            <tr><td class="k">발판 간격</td><td>더블 점프로는 넉넉히 닿고, 일반 점프로는 아슬아슬하게 닿지 않는 거리</td></tr>
+            <tr><td class="k">낙하 처리</td><td>v1.0에서 스페셜 1-2는 복귀·탈출 경로를 제공하고, 스페셜 2는 진입 언덕으로 리스폰하도록 구분</td></tr>
+            <tr><td class="k">진입 통제</td><td>언덕은 더블 점프로도 오를 수 없게 높여, 상인 부하로 연 다리·점프대로만 진입</td></tr>
+            <tr><td class="k">주행 동선</td><td>동선 중앙에는 충돌 프랍을 두지 않고, 야자수처럼 부피가 큰 프랍은 외곽과 언덕 가장자리에만 배치</td></tr>
+            <tr><td class="k">카메라</td><td>플레이어 뒤가 지형에 막히면 시야가 급격히 줌인되는 문제를 프랍 배치 단계에서 회피</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="duo">
+        <figure><img src="assets/img/harori-blockout.jpg" alt="스페셜 존 점프 구간 블록아웃" loading="lazy"><figcaption>블록아웃 · 스페셜 존 1-2 점프 구간</figcaption></figure>
+        <figure><img src="assets/img/harori-special.jpg" alt="스페셜 존 2 도착 지점의 무대형 플랫폼" loading="lazy"><figcaption>라이브 · 스페셜 존 2 도착 무대와 강조 발판</figcaption></figure>
+      </div>
+
+      <h3>점프대를 다시 만든 이유</h3>
+      <p>기존 이벤트의 점프대는 점프 실패가 잦고 착지 위치가 크게 틀어졌습니다. 그래서 <strong>바닥에 점프 인식 범위를 표시</strong>하고, <strong>양옆 난간으로 방향을 고정</strong>하고, <strong>경사로에 화살표</strong>를 넣어 한눈에 점프대임을 알 수 있도록 신규 프랍을 요청했습니다.</p>
+      <div class="duo tight">
+        <figure><img src="assets/img/harori-jumppad-ai.jpg" alt="생성형 AI로 만든 점프대 콘셉트 이미지" loading="lazy"><figcaption>요청서 · 생성형 AI로 만든 콘셉트 레퍼런스</figcaption></figure>
+        <figure><img src="assets/img/harori-jumppad-live.jpg" alt="라이브에 적용된 점프대. 난간과 화살표, 바닥 인식 범위가 있음" loading="lazy"><figcaption>라이브 · 아트 제작 후 적용된 점프대</figcaption></figure>
+      </div>
+      <div class="callout">
+        <div class="k">AI 활용</div>
+        <p>점프대 콘셉트와 레벨 전체 무드 레퍼런스를 생성형 AI로 만들어 리소스 요청서에 첨부했습니다. 글로 설명하기 어려운 형태와 분위기를 아트팀에 전달하는 시각 자료로 활용했습니다.</p>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="num">TROUBLESHOOTING</div>
+      <h2>종류별 일괄 트리거에서 객체별 설정으로</h2>
+      <p>엔진이 오래돼 아이템 객체마다 점수와 효과를 하나씩 부여해야 했습니다. 처음에는 작업량을 줄이려고 ‘이 종류의 아이템이면 해당 효과 발동’ 조건으로 트리거를 묶었습니다.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="트러블슈팅 과정"><table class="t t-fluid"><tbody>
+        <tr><td class="k">문제</td><td>다른 종류의 점수 아이템을 먹으면, 나중에 먹은 아이템인데도 앞서 먹은 아이템의 효과가 발동했습니다.</td></tr>
+        <tr><td class="k">해결</td><td>종류별 일괄 조건을 버리고 객체마다 점수와 효과를 개별로 설정했습니다. 수작업이 크게 늘었지만 효과가 섞이는 문제를 없앴습니다.</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <!-- 08 -->
+    <section>
+      <div class="num">08 · RISK</div>
+      <h2>기획 v1.0에서 짚은 리스크와 대응</h2>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="가로 스크롤 가능한 표">
+        <table class="t">
+          <thead><tr><th>리스크</th><th>대응</th></tr></thead>
+          <tbody>
+            <tr><td class="k">설계와 체감 난이도의 간극</td><td>시간·극성 팬·스페셜 존 등 변수가 많아 의도보다 어렵게 느껴질 수 있음 → '가벼운 이벤트'라는 본질을 기준으로 난이도 가이드를 먼저 세우고 개발</td></tr>
+            <tr><td class="k">랜덤과 공정성</td><td>과한 무작위는 불합리한 경험이 됨 → 랜덤 요소와 고정 요소를 명확히 구분</td></tr>
+            <tr><td class="k">시야 문제</td><td>지형에 막혀 카메라가 급격히 줌인될 수 있음 → 프랍 배치 시 카메라 공간 확보</td></tr>
+            <tr><td class="k">경쟁 배제로 인한 동기 약화</td><td>랭킹을 넣지 않아 성취감이 줄 수 있음 → 소수를 위한 경쟁 대신 누구나 누릴 수 있는 '뜻밖의 행운'(대량 굿즈, 히든 기믹)으로 플레이 목적을 부여</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 09 -->
+    <section>
+      <div class="num">09 · LIVE</div>
+      <h2>라이브, 그리고 돌아보며</h2>
+      <p>2026년 10월 7일부터 11월 5일까지 한 달간 진행되는 메인 이벤트로 오픈했습니다. 플레이어는 마지막에 하로리의 콘서트 무대가 있는 클리어 존에서 모은 굿즈 점수에 따라 보상을 받습니다. (<a href="https://dn.pupugame.com/news/event.html?mode=read&amp;no=719" target="_blank" rel="noopener">공식 이벤트 페이지 ↗</a>)</p>
+      <figure>
+        <img src="assets/img/harori-finale.jpg" alt="클리어 존. 하로리 콘서트 무대 앞에서 팬들이 응원하는 장면" loading="lazy">
+        <figcaption>라이브 · 클리어 존 (하로리 콘서트 무대)</figcaption>
+      </figure>
+      <h3>의도대로 작동한 것</h3>
+      <ul class="retro">
+        <li>2차 하로리 이벤트와 다른, 가볍고 잔잔한 늦여름·초가을 노을 분위기를 살렸습니다. 아이돌 하로리의 굿즈 이벤트라는 느낌도 잘 살았습니다.</li>
+        <li>난이도를 일부러 매우 쉽게 설계했고, 플레이어들이 쉽게 적응해 보상을 받아 갔습니다.</li>
+        <li>화살표와 유도 불꽃놀이로 스페셜 존을 안내하고, 상단 자막으로 스페셜 존 몬스터의 등장과 퇴장을 알렸습니다. 적을 부딪혀 시원하게 날려 버리는 가벼운 재미가 의도대로 전달됐습니다.</li>
+      </ul>
+      <h3>아쉬웠던 것</h3>
+      <p>스페셜 존을 마치고 돌아갈 때 플레이어를 하늘로 날려 불꽃놀이를 보여 준 뒤 목표 좌표로 옮기고 싶었습니다. 하지만 툴 특성상 이 연출은 섬 전체를 비춰 프레임이 크게 떨어진다는 이유로 아트팀이 반대했고, 컷신으로 불꽃놀이를 보여 준 뒤 순간이동하는 방식으로 바꿨습니다.</p>
+      <h3>다음에 바꿀 것</h3>
+      <p>‘적에게 부딪혀 부스트를 이어 간다’는 규칙을 이벤트 웹페이지, 튜토리얼, 플레이 중 안내에 모두 넣고 시작 지점에 부스트 아이템까지 배치했지만, 게시판에 관련 질문이 올라왔습니다. 다음에는 이런 핵심 규칙을 강제 1회 튜토리얼로 직접 해 보게 하겠습니다.</p>
+    </section>
+
+    <nav class="next-case">
+      <a href="index.html#projects">← 전체 프로젝트</a>
+      <a href="p2-level.html">다음 · PANOPTICON: Breaking Point →</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <h2>함께 만들고 싶은 콘텐츠가 있다면</h2>
+    <p><a href="portfolio-summary.pdf">포트폴리오 요약 PDF · 검토용 초안</a></p>
+    <div class="contact"><a href="mailto:kwc971109@gmail.com">kwc971109@gmail.com</a></div>
+    <small>© 2026 경원철. 게임 이미지의 저작권은 각 게임사에 있습니다.</small>
+  </div>
+</footer>
+
+</body>
+</html>

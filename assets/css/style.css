@@ -343,3 +343,4 @@ details.data-table{margin-top:12px}details.data-table summary{cursor:pointer;fon
 .case figure.narrow img[width="615"]{max-width:615px}
 @media(max-width:900px){.device-grid.three{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.doc-groups{grid-template-columns:1fr}.device-grid.three{grid-template-columns:1fr}.case ul.plain li b{display:block}.block-tight{padding:40px 0}}
+.case figure.clip{max-width:804px}.case figure.clip video{display:block;width:100%;height:auto;border-radius:var(--radius);background:#000}

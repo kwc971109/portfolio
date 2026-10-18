@@ -320,3 +320,26 @@ details.data-table{margin-top:12px}details.data-table summary{cursor:pointer;fon
 @media(max-width:640px){.br-wide{display:none}.hero-credit{left:max(16px,env(safe-area-inset-left,0px))}}
 .case ul.retro{margin:0 0 14px;padding-left:20px;max-width:760px;color:var(--ink-2)}.case ul.retro li{margin:6px 0}
 .yy-duo img{aspect-ratio:19/10;object-fit:cover;object-position:30% 50%}.yy-duo figure:last-child img{object-position:50% 35%}
+
+/* 2026-10-18 compact rewrite */
+.block-tight{padding:56px 0}
+.project .summary{font-size:16px;color:var(--ink);margin:0 0 12px}
+.project .chips{margin-bottom:10px}
+.case-links{margin-top:20px}
+.note-line{font-size:14px;color:var(--muted);margin:14px 0 0}
+.doc-groups{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.doc-group h3{font-size:13px;letter-spacing:.1em;color:var(--muted);margin:0 0 10px}
+.doc-group h3 ~ h3{margin-top:26px}
+.doclist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.doclist a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:600;font-size:15px}
+.doclist a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.doclist a span::after{content:" ↗";color:var(--accent)}
+.doclist em{font-style:normal;font-size:12px;font-weight:800;letter-spacing:.06em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 8px;white-space:nowrap}
+.case ul.plain{list-style:none;padding:0;margin:0 0 8px;max-width:820px}
+.case ul.plain li{padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.case ul.plain li b{display:inline-block;min-width:88px;color:var(--ink)}
+.case ul.retro li b{color:var(--ink);margin-right:6px}
+.device-grid.three{grid-template-columns:repeat(3,1fr)}
+.case figure.narrow img[width="615"]{max-width:615px}
+@media(max-width:900px){.device-grid.three{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.doc-groups{grid-template-columns:1fr}.device-grid.three{grid-template-columns:1fr}.case ul.plain li b{display:block}.block-tight{padding:40px 0}}

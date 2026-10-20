@@ -364,3 +364,7 @@ details.data-table{margin-top:12px}details.data-table summary{cursor:pointer;fon
 .strength a.more:hover{text-decoration:underline}
 .case figure.narrow-sm{max-width:620px}
 table.t td small{display:inline-block;margin-top:4px;font-size:13px;color:var(--muted)}
+/* 2026-10-20 AI case shortcut: hero button + nav item */
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-light:hover{background:#f1efea;border-color:#f1efea}
+.nav a[aria-current="page"]{color:var(--accent-ink)}

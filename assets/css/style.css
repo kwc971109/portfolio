@@ -359,3 +359,8 @@ details.data-table{margin-top:12px}details.data-table summary{cursor:pointer;fon
 .hero .wrap{padding-top:24px;padding-bottom:20px}
 .hero-credit{position:static;padding:0 16px 20px}
 }
+/* 2026-10-20 AI case page */
+.strength a.more{display:inline-block;margin-top:12px;font-size:14px;font-weight:700;color:var(--accent-ink);text-decoration:none}
+.strength a.more:hover{text-decoration:underline}
+.case figure.narrow-sm{max-width:620px}
+table.t td small{display:inline-block;margin-top:4px;font-size:13px;color:var(--muted)}

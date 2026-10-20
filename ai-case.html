@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 활용 사례 · 주간 분석 자동화 | 경원철 포트폴리오</title>
+  <meta name="description" content="측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, AI와 함께 읽히는 주간 분석 자료와 자동화 파이프라인을 만든 사례 (화면은 가상 데이터 재현)">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261020">
+</head>
+<body><a class="skip-link" href="#main-content">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><b>경원철</b><span>CONTENT DESIGNER</span></a>
+    <nav class="nav">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#docs">기획서</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="text-hero">
+  <div class="wrap">
+    <a href="index.html">← 메인으로</a>
+    <p>AI WORKFLOW · 현 직장 업무</p>
+    <h1>스펙 측정 콘텐츠 주간 분석 자료와 자동화</h1>
+    <p>측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, AI와 함께 비전문가 기획자도 바로 읽는 주간 자료와 매주 자동으로 나오는 파이프라인을 만들었습니다.</p>
+  </div>
+</div>
+
+<main id="main-content" class="case">
+  <div class="wrap">
+    <dl class="spec">
+      <div><dt>PERIOD</dt><dd>로그 요청부터 자동화까지 약 2개월 · AI 작업 약 1주</dd></div>
+      <div><dt>ROLE</dt><dd>로그 설계와 협업 요청, AI 지시와 최종 판단</dd></div>
+      <div><dt>AI</dt><dd>Claude 제작 · Codex, 제미나이 4 아르곤 검수</dd></div>
+      <div><dt>OUTPUT</dt><dd>원본 엑셀 → 주간 페이지 자동 생성·게시·대조</dd></div>
+    </dl>
+    <p class="note-line">이 페이지의 화면은 모두 가상 데이터로 재현한 화면입니다. 숫자와 이름은 실제 서비스 수치와 무관합니다.</p>
+
+    <section id="problem">
+      <div class="num">PROBLEM</div>
+      <h2>측정 데이터가 없던 콘텐츠</h2>
+      <p>높은 난이도를 깰수록 스펙이 높다는 뜻인 콘텐츠인데, 측정 데이터가 없었습니다. 상위권 플레이어가 스펙만 확인하고 클리어 전에 나가는 경우가 있어, 클리어 로그만으로는 분포가 부정확할 수 있다는 의심도 있었습니다.</p>
+      <table class="t t-fluid"><tbody>
+        <tr><td class="k">로그 설계</td><td>클리어하지 않아도 남는 '50% 기록'(제한 시간 안에 보스 체력 50%) 로그를 새로 넣었습니다.</td></tr>
+        <tr><td class="k">협업 경로</td><td>사내에 정해진 요청 경로가 없어 PM에게 경로를 묻고, 계열사 DB 조직과 프로그램팀에 직접 요청했습니다. 해외 현지 DB와는 PM과 사내 통역을 거쳐 협의했습니다.</td></tr>
+        <tr><td class="k">기준 정리</td><td>3~4년 전 기준이던 DB의 난이도·직업 정보를 최신 체계로 바꾸는 데 참여했습니다.</td></tr>
+        <tr><td class="k">남은 것</td><td>팀이 DB 조직에 로그를 요청할 경로가 생겼습니다. 요청 경로를 정리한 팀 공유 문서는 작성 예정입니다.</td></tr>
+      </tbody></table>
+    </section>
+
+    <section id="before-after">
+      <div class="num">BEFORE · AFTER</div>
+      <h2>같은 데이터, 읽히는 자료로</h2>
+      <figure><img src="assets/img/ai/ai-compare-first.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽은 표만 이어지는 초기 구성, 오른쪽은 기준·결과·그래프 순서로 정리한 현재 버전" loading="lazy" width="1516" height="912"><figcaption>가상 데이터로 재현한 화면 · 같은 가상 데이터로 만든 초기 구성(왼쪽)과 현재 버전(오른쪽)</figcaption></figure>
+      <table class="t t-fluid"><tbody>
+        <tr><td class="k">같은 질문</td><td>"상위 10%는 어느 난이도부터인가?"</td></tr>
+        <tr><td class="k">비포</td><td>누적 비율 행을 눈으로 따라가며 10%를 넘는 칸을 찾아야 했습니다.</td></tr>
+        <tr><td class="k">애프터</td><td>결과 줄에 "상위 10%는 고난이도 4층부터 (10.58%)"가 바로 있습니다. (가상 데이터 값)</td></tr>
+      </tbody></table>
+    </section>
+
+    <section id="how">
+      <div class="num">HOW</div>
+      <h2>AI에게 고칠 곳보다 이유를 줬습니다</h2>
+      <p>AI의 첫 결과물은 숫자는 정확했지만 표만 길게 이어져, 데이터 전문가가 아닌 기획자가 읽기 어려웠습니다.</p>
+      <ul class="plain">
+        <li><b>독자를 먼저 정함</b> 데이터를 뽑는 담당자와 자료를 읽는 기획자로 나누고, 기준 문서도 둘로 나눴습니다.</li>
+        <li><b>원칙으로 지시</b> "정리는 깔끔한데 왜 읽기 어려운가"를 따져, 한 문단에는 정보 한 종류만 담고 표는 읽는 사람의 사고 흐름 순서로 놓게 했습니다.</li>
+        <li><b>빼기는 추천부터</b> 삭제나 큰 구조 변경은 AI가 추천과 이유를 먼저 내고, 제가 결정했습니다.</li>
+        <li><b>독자의 말로</b> 통계 용어와 판단어 대신 사람 수 예시와 사실로 쓰게 했습니다.</li>
+      </ul>
+      <table class="t t-fluid"><thead><tr><th>AI가 처음 쓴 문장</th><th>고친 문장</th></tr></thead><tbody>
+        <tr><td>전체보다 뚜렷이 많은 직업군</td><td>평균보다 많은 직업군(신뢰도 높음)<br><small>'뚜렷이'는 기준이 없는 판단어</small></td></tr>
+        <tr><td>파란 막대 = 우연으로 보기 어려운 차이</td><td>파란 막대 = 표본 수에 비해 차이가 커서 신뢰도 높음<br><small>'우연'은 통계 용어</small></td></tr>
+        <tr><td>이번 주 전체 비율대로라면 약 467명일 텐데 실제로는 682명</td><td>평균 인원이 약 467명일 때 682명이라 평균 대비 +46%<br><small>조건 → 값 → 결론 순서 · 숫자는 가상 데이터 값</small></td></tr>
+      </tbody></table>
+    </section>
+
+    <section id="review">
+      <div class="num">REVIEW · RULES</div>
+      <h2>여러 AI로 검수하고, 고친 기준은 규칙으로</h2>
+      <table class="t t-fluid"><tbody>
+        <tr><td class="k">역할</td><td>Claude가 만들고 검수 의견의 타당성을 정리했습니다. 검수는 Codex와 제미나이 4 아르곤이 맡았고, 최종 결정은 제가 했습니다. 선배 기획자의 검수도 거쳤습니다.</td></tr>
+        <tr><td class="k">검수 AI 개선</td><td>첫 검수는 제안 목록을 되묻는 수준이었습니다. 평가서와 검수 틀(요청서, 사전 지식, 확인 범위, 답변 형식)을 주자 전수 대조와 모순 찾기까지 했고, 마지막 회차는 원본과 대조해 '게시 가능'을 판정했습니다.</td></tr>
+        <tr><td class="k">걸러낸 것</td><td>검수 AI는 정확성을 위해 단서와 통계 용어를 늘리는 쪽으로 제안하기도 했습니다. 독자를 헷갈리게 하는 문구는 제가 걸러내고, '곁가지 문구 금지' 같은 규칙으로 만들었습니다.</td></tr>
+        <tr><td class="k">규칙화</td><td>같은 지적을 두 번 하지 않도록 고친 기준을 세 곳에 남겼습니다. 다음 담당자와 다른 AI가 읽는 지시문, 같은 작업을 다시 여는 AI의 기억, 모든 대화와 프로젝트에 적용되는 전역 규칙입니다.</td></tr>
+      </tbody></table>
+    </section>
+
+    <section id="automation">
+      <div class="num">AUTOMATION · RESULT</div>
+      <h2>원본만 넣으면 매주 나오는 자료</h2>
+      <p>원본 엑셀 → 원본 확인 → 집계 → 그래프 63장 → 페이지 조립(표 17개) → 자체 검증 → 게시 → 게시 후 대조. 숫자를 추측해 채우지 않고, 원본 합계가 맞지 않으면 억지로 맞추지 않고 그대로 표시합니다.</p>
+      <div class="duo">
+        <figure><img src="assets/img/ai/ai-after-avg-diff.png" alt="구간마다 전체 평균 대비 몇 퍼센트 많은지 적은지를 직업군별 막대로 보여 주는 그래프" loading="lazy" width="1310" height="1404"><figcaption>전체 평균 대비 구간별 차이. 파란 막대는 표본 수에 비해 차이가 커서 신뢰도가 높은 경우 · 가상 데이터로 재현한 화면</figcaption></figure>
+        <figure><img src="assets/img/ai/ai-after-group4.png" alt="한 직업군 안에서 인원이 가장 많은 직업보다 다른 직업의 상위 10% 비중이 더 높게 나온 막대 그래프" loading="lazy" width="1310" height="774"><figcaption>한 직업군에서 인원이 가장 많은 직업보다 다른 직업의 상위 10% 비중이 높음 · 실제 자료에서 나온 발견을 가상 데이터로 재현</figcaption></figure>
+      </div>
+      <ul class="plain">
+        <li><b>데이터의 의미</b> 요청 배경대로 클리어 기록과 50% 기록 사이에 의미 있는 차이를 확인했습니다.</li>
+        <li><b>새 발견</b> 한 직업군에서 인원이 가장 많은 직업보다 다른 직업의 상위권 비중이 더 높았습니다.</li>
+        <li><b>활용</b> 콘텐츠 파트에서 만든 자료를 밸런스·스킬 파트도 관심 있게 보고 있습니다.</li>
+        <li><b>페이지</b> 표 칸이 약 1만 5천 칸에서 1천 칸 안팎으로 줄어 가볍게 열리고, 매주 원본을 넣으면 몇 초 만에 만들어집니다.</li>
+        <li><b>확대</b> 서비스 중인 전 권역으로 넓힐 예정입니다. 지금은 1개 권역입니다.</li>
+      </ul>
+      <figure class="narrow-sm"><img src="assets/img/ai/ai-raw-excel.png" alt="중국어로 된 집계표 형태의 가상 원본 엑셀" loading="lazy" width="1000" height="906"><figcaption>받는 원본은 중국어 집계표입니다. 이 형태를 그대로 읽어 페이지까지 만듭니다 · 가상 숫자</figcaption></figure>
+    </section>
+
+    <nav class="next-case">
+      <a href="index.html">← 메인으로</a>
+      <a href="p2-level.html">PANOPTICON: Breaking Point →</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <h2>경원철 · 콘텐츠 기획자</h2>
+    <div class="contact"><a href="mailto:kwc971109@gmail.com">kwc971109@gmail.com</a></div>
+    <p><a href="portfolio-summary.pdf" target="_blank" rel="noopener">포트폴리오 요약 PDF</a></p>
+    <small>© 2026 경원철</small>
+  </div>
+</footer>
+</body>
+</html>

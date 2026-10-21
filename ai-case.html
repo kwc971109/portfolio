@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI 활용 사례 · 주간 분석 자동화 | 경원철 포트폴리오</title>
-  <meta name="description" content="측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, AI와 함께 읽히는 주간 분석 자료와 자동화 파이프라인을 만든 사례 (화면은 가상 데이터 재현)">
+  <title>AI 활용 사례 | 경원철 포트폴리오</title>
+  <meta name="description" content="AI 활용 사례 2건: AI에게 구현과 검수를 맡겨 만든 UE5 개인 레벨, 그리고 지표 로그를 새로 만들어 주간 분석을 자동화한 현업 사례 (화면은 가상 데이터 재현)">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261020b">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261021">
 </head>
 <body><a class="skip-link" href="#main-content">본문 바로가기</a>
 
@@ -17,7 +17,8 @@
       <a href="index.html#projects">Projects</a>
       <a href="ai-case.html" aria-current="page">AI 활용</a>
       <a href="index.html#docs">기획서</a>
-      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="hide-sm">Contact</a>
+      <a class="nav-pr" href="https://drive.google.com/file/d/1PpBw2q_iCjKBQBAMTMLppfgNX7j-xgVZ/view" target="_blank" rel="noopener">PR 문서 ↗</a>
     </nav>
   </div>
 </header>
@@ -25,19 +26,45 @@
 <div class="text-hero">
   <div class="wrap">
     <a href="index.html">← 메인으로</a>
-    <p>AI WORKFLOW · 현 직장 업무</p>
-    <h1>스펙 측정 콘텐츠 주간 분석 자료와 자동화</h1>
-    <p>측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, AI와 함께 비전문가 기획자도 바로 읽는 주간 자료와 매주 자동으로 나오는 파이프라인을 만들었습니다.</p>
+    <p>AI WORKFLOW</p>
+    <h1>AI 활용 사례 2건</h1>
+    <p>UE5 개인 레벨은 AI에게 구현과 검수를 맡겨 만들었습니다. 현업에서는 지표 로그를 새로 만들고, 주간 분석을 AI로 자동화했습니다.</p>
   </div>
 </div>
 
 <main id="main-content" class="case">
   <div class="wrap">
+    <div class="ai-pick">
+      <a class="pick" href="p2-level.html#role">
+        <img src="assets/img/p2/p2-z6-cart.jpg" alt="" width="960" height="540">
+        <span class="pb">
+          <span class="k">① 개인 프로젝트 · UE5</span>
+          <span class="pt">PANOPTICON — AI로 만든 7구역 레벨</span>
+          <span class="pd">기획·배치·대사는 직접, 구현은 Claude Code, 통합 검수는 Codex에 맡겼습니다. 두 AI는 Unreal MCP로 에디터를 직접 조작했고, 녹화 영상과 스크린샷으로 85차까지 다시 지시했습니다.</span>
+          <span class="go">AI 역할 분담 보기 →</span>
+        </span>
+      </a>
+      <a class="pick" href="#data">
+        <img class="contain" src="assets/img/ai/ai-after-group4.png" alt="" width="1310" height="774">
+        <span class="pb">
+          <span class="k">② 현 직장 업무 · 데이터</span>
+          <span class="pt">지표 로그 구축과 주간 분석 자동화</span>
+          <span class="pd">측정 데이터가 없던 콘텐츠에 로그를 새로 넣었습니다. 지금은 원본 엑셀만 넣으면 몇 초 만에 그래프 63장·표 17개 페이지가 나옵니다. (화면은 가상 데이터로 재현)</span>
+          <span class="go">아래에서 보기 ↓</span>
+        </span>
+      </a>
+    </div>
+
+    <section id="data" class="data-head">
+      <div class="num">CASE 2 · 현 직장 업무</div>
+      <h2>스펙 측정 콘텐츠 주간 분석 자료와 자동화</h2>
+      <p>측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, AI와 함께 비전문가 기획자도 바로 읽는 주간 자료와 매주 자동으로 나오는 파이프라인을 만들었습니다.</p>
+    </section>
     <dl class="spec">
       <div><dt>PERIOD</dt><dd>로그 요청부터 자동화까지 약 2개월 · AI 작업 약 1주</dd></div>
       <div><dt>ROLE</dt><dd>로그 설계와 협업 요청, AI 지시와 최종 판단</dd></div>
       <div><dt>AI</dt><dd>Claude 제작 · Codex, 제미나이 4 아르곤 검수</dd></div>
-      <div><dt>OUTPUT</dt><dd>원본 엑셀 → 주간 페이지 자동 생성·게시·대조</dd></div>
+      <div><dt>OUTPUT</dt><dd>원본 엑셀 → 몇 초 만에 그래프 63장·표 17개 페이지, 게시·대조까지 자동</dd></div>
     </dl>
     <p class="note-line">이 페이지의 화면은 모두 가상 데이터로 재현한 화면입니다. 숫자와 이름은 실제 서비스 수치와 무관합니다.</p>
 
@@ -47,7 +74,7 @@
       <p>높은 난이도를 깰수록 스펙이 높다는 뜻인 콘텐츠입니다. 그런데 측정 데이터가 없었습니다. 상위권 플레이어가 스펙만 확인하고 클리어 전에 나가는 경우도 있었습니다. 그래서 클리어 로그만으로는 분포가 부정확할 수 있었습니다.</p>
       <table class="t t-fluid"><tbody>
         <tr><td class="k">활용</td><td>콘텐츠 개발자가 목표 이용자 범위와 개발 난이도를 판단할 때 참고합니다.</td></tr>
-        <tr><td class="k">로그 설계</td><td>클리어하지 않아도 남는 '50% 기록'(제한 시간 안에 보스 체력 50%) 로그를 새로 넣었습니다.</td></tr>
+        <tr><td class="k">로그 설계</td><td>클리어하지 않아도 남는 '50% 기록'(제한 시간 절반 안에 보스 체력 50%) 로그를 새로 넣었습니다.</td></tr>
         <tr><td class="k">협업 경로</td><td>사내에 정해진 요청 경로가 없었습니다. 그래서 PM에게 경로를 묻고, 계열사 DB 조직과 프로그램팀에 직접 요청했습니다. 해외 현지 DB와는 PM과 사내 통역을 거쳐 협의했습니다.</td></tr>
         <tr><td class="k">기준 정리</td><td>3~4년 전 기준이던 DB의 난이도·직업 정보를 최신 체계로 바꾸는 데 참여했습니다.</td></tr>
         <tr><td class="k">남은 것</td><td>팀이 DB 조직에 로그를 요청할 경로가 생겼습니다. 요청 경로를 정리한 팀 공유 문서는 작성 예정입니다.</td></tr>

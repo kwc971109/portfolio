@@ -443,3 +443,9 @@ table.t td small{display:inline-block;margin-top:4px;font-size:13px;color:var(--
 .pillars.key3{margin-top:28px}
 .pillars.key3 .pillar h3{font-size:18px;line-height:1.35}
 .case .pillars.key3 .pillar p{font-size:15px;margin:0}
+/* 2026-10-21c 자연스러운 줄바꿈: 문장(.sn)과 쉼표 마디(.cl)를 묶어, 줄이 모자라면 통째로 다음 줄로 넘긴다 */
+.sn,.cl{display:inline-block}
+/* 쉼표 마디가 한 줄보다 길면 assets/js/wrap.js가 cl-flow를 붙여 묶음을 푼다(짧은 꼬리 줄 방지) */
+.cl.cl-flow{display:inline}
+/* 문장 끝 한 단어만 다음 줄에 남지 않게(지원 브라우저만 적용, 미지원 시 그대로) */
+p,li,td,.sn{text-wrap:pretty}

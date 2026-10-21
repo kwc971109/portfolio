@@ -50,7 +50,7 @@
 
     <section>
       <div class="num">CONCEPT</div>
-      <h2>이름에서 시작한 콘셉트, 땅을 뒤흔드는 검</h2>
+      <h2><span class="cl">이름에서 시작한 콘셉트,</span> <span class="cl">땅을 뒤흔드는 검</span></h2>
       <p class="big"><span class="sn">유영은 이름 그대로 땅을 뒤흔드는 보스입니다.</span> <span class="sn"><span class="cl">진천검(震天劍)이라는 이름처럼 지진과 광범위 공격을 콘셉트로 잡아,</span> <span class="cl">공격 대부분이 바닥을 내려치는 기술이고 내려칠 때마다 화면이 크게 흔들립니다.</span></span> <span class="sn">여기에 무협 느낌이 나는 돌진 기술을 더했습니다.</span></p>
       <p><span class="sn">목표는 컨트롤 실력에 따라 클리어 타임이 갈리는 전투였습니다.</span> <span class="sn"><span class="cl">공격 범위는 넓지만 예비 동작을 넉넉히 줘서,</span> <span class="cl">패턴을 익히면 보고 피하면서 딜을 넣을 수 있습니다.</span></span> <span class="sn">반대로 딜 욕심에 자리를 지키면 크게 맞도록 했습니다.</span></p>
       <table class="t t-fluid"><tbody>
@@ -72,7 +72,7 @@
 
     <section>
       <div class="num">REVISION</div>
-      <h2>피할 수 없던 유도 검을 다시 만든 과정</h2>
+      <h2><span class="cl">피할 수 없던 유도 검을</span> <span class="cl">다시 만든 과정</span></h2>
       <p><span class="sn"><span class="cl">기존 보스의 얼음 투사체 패턴을 개조해 만들었는데,</span> <span class="cl">첫 버전은 맞는 순간 바로 피해가 들어가고 유도 성능도 너무 좋아서 사실상 피할 수 없었습니다.</span></span> <span class="sn"><span class="cl">그래서 거의 새로 만들다시피 바꿔,</span> <span class="cl">검이 플레이어가 직전에 있던 바닥에 꽂히고 1초 뒤 터지게 했습니다.</span></span> <span class="sn">타이밍은 보스 모션으로 알려 줍니다.</span></p>
       <p><span class="cl">공중에서 조준한 뒤 다시 유도 투사체를 쏘는 구조라,</span> <span class="cl">프레임을 맞추는 시그널(언리얼로 치면 블루프린트 노드 하나)을 1프레임 단위로 맞춰 조준이 튀는 문제도 잡았습니다.</span></p>
       <figure class="clip"><video id="yy-clip" src="assets/media/yy-p8-sword.mp4" poster="assets/img/yy/yy-p8-sword-poster.jpg" autoplay muted loop playsinline controls preload="auto" width="804" height="406" aria-label="유도 검 패턴 반복 영상. 붉은 조준선이 플레이어를 따라가다 검이 꽂힌 자리가 폭발한다"></video><figcaption>유도 검 패턴 (3.6초 반복) · 붉은 조준선이 플레이어를 따라가다, 검이 꽂힌 자리가 1초 뒤 터집니다. 테스트 영상에서 화면 UI 일부를 지웠습니다.</figcaption></figure>
@@ -80,7 +80,7 @@
 
     <section>
       <div class="num">QA</div>
-      <h2>엔진의 동기화 한계 안에서 균형 찾기</h2>
+      <h2><span class="cl">엔진의 동기화 한계 안에서</span> <span class="cl">균형 찾기</span></h2>
       <p><span class="sn">오래된 엔진이라 전투 콘텐츠에서도 동기화 문제가 자주 생깁니다.</span> <span class="sn">유영은 빠른 2회 돌진 중에 보스 위치가 순간적으로 튀어 순간이동처럼 보이는 문제가 가장 잦았습니다.</span> <span class="sn"><span class="cl">시그널로 강제 동기화를 걸면 해결되지만,</span> <span class="cl">너무 자주 걸면 성능이 떨어집니다.</span></span> <span class="sn">그래서 둘 사이의 균형점을 찾는 데 QA 시간을 가장 많이 썼습니다.</span></p>
       <p><span class="sn">이 문제는 엔진 구조에서 오는 것이라 파트의 고년차 기획자들도 똑같이 겪습니다.</span> <span class="sn">그 밖에 QA에서 지적된 문제는 거의 없었습니다.</span></p>
     </section>

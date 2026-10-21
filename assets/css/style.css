@@ -447,5 +447,5 @@ table.t td small{display:inline-block;margin-top:4px;font-size:13px;color:var(--
 .sn,.cl{display:inline-block}
 /* 쉼표 마디가 한 줄보다 길면 assets/js/wrap.js가 cl-flow를 붙여 묶음을 푼다(짧은 꼬리 줄 방지) */
 .cl.cl-flow{display:inline}
-/* 문장 끝 한 단어만 다음 줄에 남지 않게(지원 브라우저만 적용, 미지원 시 그대로) */
-p,li,td,.sn{text-wrap:pretty}
+/* 문단·카드·제목 끝 줄에 한 단어만 남지 않게(지원 브라우저만 적용, 미지원 시 그대로) */
+body{text-wrap:pretty}

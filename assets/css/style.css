@@ -439,3 +439,7 @@ table.t td small{display:inline-block;margin-top:4px;font-size:13px;color:var(--
 .qlinks{font-size:13px;gap:2px 12px}
 .ai-pick{grid-template-columns:1fr}
 }
+/* 2026-10-21b 하로리 핵심 3가지 */
+.pillars.key3{margin-top:28px}
+.pillars.key3 .pillar h3{font-size:18px;line-height:1.35}
+.case .pillars.key3 .pillar p{font-size:15px;margin:0}

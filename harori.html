@@ -6,7 +6,7 @@
   <title>하로리 선셋 페스타 | 경원철 포트폴리오</title>
   <meta name="description" content="드래곤네스트 2026 이벤트 '하로리 선셋 페스타' 레벨 디자인">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261021">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261021b">
 </head>
 <body><a class="skip-link" href="#main-content">본문 바로가기</a>
 
@@ -17,7 +17,7 @@
       <a href="index.html#projects">Projects</a>
       <a href="ai-case.html">AI 활용</a>
       <a href="index.html#docs">기획서</a>
-      <a href="index.html#contact" class="hide-sm">Contact</a>
+      <a href="index.html#about" class="hide-sm">About</a>
       <a class="nav-pr" href="https://drive.google.com/file/d/1PpBw2q_iCjKBQBAMTMLppfgNX7j-xgVZ/view" target="_blank" rel="noopener">PR 문서 ↗</a>
     </nav>
   </div>
@@ -44,16 +44,22 @@
       <div><dt>ROLE</dt><dd>기획 단독 (기획부터 배치까지)</dd></div>
     </dl>
     <div class="links case-links">
-      <a class="btn btn-primary" href="https://youtu.be/pRq1Fm1yATo" target="_blank" rel="noopener">라이브 플레이 영상 ▶</a>
+      <a class="btn btn-primary" href="https://youtu.be/pRq1Fm1yATo" target="_blank" rel="noopener">영상 ▶</a>
       <a class="btn btn-ghost" href="harori-event.html" target="_blank" rel="noopener">공식 이벤트 페이지 ↗</a>
       <a class="btn btn-ghost" href="https://drive.google.com/file/d/16sm19gZxOPFpXuxkxnyS8wrFdIVACJdW/view" target="_blank" rel="noopener">기획서 v1.0 ↗</a>
       <a class="btn btn-ghost" href="https://drive.google.com/file/d/1akgiL62F-KFhn2bbDATSt2d_tlnbQXsw/view" target="_blank" rel="noopener">QA 사양서 ↗</a>
     </div>
 
+    <div class="pillars key3">
+      <div class="pillar"><div class="k">KEY 1 · 테마와 구조</div><h3>아이돌·축제·늦여름의 오픈형 맵</h3><p>쉬운 난이도를 바탕으로, 넓은 섬을 정해진 길 없이 자유롭게 돌아다니게 만들었습니다.</p></div>
+      <div class="pillar"><div class="k">KEY 2 · 전투 재미</div><h3>적을 마구 쓰러뜨리는 부스트 연계</h3><p>부스트 상태로 부딪히면 적이 기절하고 부스트가 이어져서, 피하던 적을 빠르게 쓸어 담는 재미가 생깁니다.</p></div>
+      <div class="pillar"><div class="k">KEY 3 · 수집</div><h3>여러 갈래의 보물 수집</h3><p>스페셜 존과 히든 존의 스페셜 굿즈, 랜덤으로 나오는 아이템까지 보물을 모으는 방법을 여러 갈래로 나눴습니다.</p></div>
+    </div>
+
     <section>
       <div class="num">PROBLEM</div>
       <h2>한 달 내내 같은 루트를 도는 이벤트</h2>
-      <p>이전 하로리 이벤트(레이싱)는 조작이 쉽고 속도감이 좋았습니다. 하지만 플레이어는 이벤트 기간 내내 고정된 루트를 반복했습니다. 장애물인 극성 팬은 피하기만 하는 방해 요소였습니다. 쉬운 조작과 속도감은 살리고, 반복되는 루트와 피하기만 하는 장애물을 바꾸는 것이 목표였습니다.</p>
+      <p>이전 하로리 이벤트는 레이싱이라 조작이 쉽고 속도감이 좋았지만, 플레이어는 이벤트 기간 내내 같은 루트만 반복했습니다. 장애물인 극성 팬도 그저 피해야 하는 방해 요소였습니다. 그래서 쉬운 조작과 속도감은 살리면서, 반복되는 루트와 피하기만 하는 장애물을 바꾸는 것을 목표로 잡았습니다.</p>
     </section>
 
     <section>
@@ -69,7 +75,7 @@
     <section>
       <div class="num">DECISION 2</div>
       <h2>피하던 장애물을, 부딪힐수록 이득인 자원으로</h2>
-      <p>플레이어가 직접 움직임을 컨트롤하는 평지형 핀볼에 가까운 플레이 감각을 목표로 했습니다. 부스트 상태로 극성 팬에 부딪히면 팬이 기절합니다. 이때 부스트도 연장됩니다. 방해 요소였던 팬이 부스트를 이어 가는 발판이 됩니다.</p>
+      <p>플레이어가 직접 움직임을 조종하는, 평지 위의 핀볼 같은 감각을 목표로 했습니다. 부스트 상태로 극성 팬에 부딪히면 팬이 기절하고 부스트도 그만큼 늘어납니다. 피하기만 하던 팬이 이제는 부스트를 이어 가는 발판이 됩니다.</p>
       <div class="loop">
         <div><b>부스트 획득</b>착지 대쉬(점프 후 착지했을 때 전진 키 입력) 및 스피드 아이템으로 발동, 무적 상태로 빠르게 가속</div>
         <div><b>팬에게 돌진</b>부스트 상태로 부딪히면 피격 대신 팬이 기절</div>
@@ -81,7 +87,7 @@
     <section>
       <div class="num">DECISION 3</div>
       <h2>위치는 고정, 종류와 등장은 랜덤</h2>
-      <p>랜덤이 지나치면 운이 실력을 덮습니다. 반대로 랜덤이 없으면 한 달 내내 같은 판이 됩니다. 기믹이 나오는 <strong>위치는 고정</strong>해 맵을 익힐수록 동선이 좋아지게 하고, <strong>종류와 등장 여부는 랜덤</strong>으로 두어 매 판 다른 판단을 하게 했습니다.</p>
+      <p>랜덤이 지나치면 운이 실력을 덮고, 랜덤이 없으면 한 달 내내 같은 판이 됩니다. 그래서 기믹이 나오는 <strong>위치는 고정</strong>해 맵을 익힐수록 동선이 좋아지게 했고, <strong>종류와 등장 여부는 랜덤</strong>으로 둬서 매 판 다른 판단을 하게 했습니다.</p>
     </section>
 
     <section>

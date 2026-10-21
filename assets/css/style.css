@@ -314,7 +314,7 @@ details.data-table{margin-top:12px}details.data-table summary{cursor:pointer;fon
 .scroll-hint{display:none}
 @media(max-width:640px){.chart-scroll svg{min-width:960px}.case p.scroll-hint{display:block;font-size:13px;color:#70706e;margin:8px 0 0}}
 .t.t-fluid{min-width:0}
-@media(max-width:640px){.t.t-fluid td.k{white-space:normal;width:76px}.t.t-fluid th,.t.t-fluid td{padding:12px 12px}}
+@media(max-width:640px){.t.t-fluid td.k{white-space:normal;width:100px}.t.t-fluid th,.t.t-fluid td{padding:12px 12px}}
 .hero img.bg.hero-p2{object-position:74% 45%}
 .hero-credit{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:14px;z-index:1;margin:0;font-size:12px;color:rgba(255,255,255,.78)}
 @media(max-width:640px){.br-wide{display:none}.hero-credit{left:max(16px,env(safe-area-inset-left,0px))}}

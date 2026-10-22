@@ -458,3 +458,8 @@ body{text-wrap:pretty}
 .section-more a{color:var(--accent-ink);text-decoration:none}
 .section-more a:hover{text-decoration:underline}
 .doc-note{margin:-4px 0 12px;font-size:13px;color:var(--muted);line-height:1.5}
+
+/* 2026-10-22 홈 첫 화면을 하로리 헤더(AI 화질 개선판)로 교체 */
+.hero img.bg.hero-harori{object-position:50% 38%}
+@media(min-width:641px){.hero.hero-v2{min-height:min(66vh,620px)}}
+@media(max-width:640px){.hero img.bg.hero-harori{object-position:24% 55%}}

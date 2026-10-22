@@ -6,7 +6,7 @@
   <title>로그 설계·AI 분석 자동화 | 경원철 포트폴리오</title>
   <meta name="description" content="측정 데이터가 없던 콘텐츠에 지표 로그를 새로 넣고, 주간 분석을 AI로 자동화한 현업 사례. 화면은 가상 데이터로 재현했습니다.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261022b">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261023a">
 </head>
 <body><a class="skip-link" href="#main-content">본문 바로가기</a>
 
@@ -41,7 +41,7 @@
     <dl class="spec">
       <div><dt>PERIOD</dt><dd>로그 요청부터 자동화까지 약 2개월 · AI 작업 약 열흘(실작업 7일)</dd></div>
       <div><dt>ROLE</dt><dd>로그 설계와 협업 요청, AI 지시와 최종 판단</dd></div>
-      <div><dt>AI</dt><dd>Claude 제작 · Codex, 제미나이 4 아르곤 검수</dd></div>
+      <div><dt>AI</dt><dd>Claude 제작 · Codex, Gemini 검수</dd></div>
       <div><dt>OUTPUT</dt><dd>원본 엑셀 → 몇 초 만에 표 7개·그래프 4장 페이지, 게시·대조까지 자동</dd></div>
     </dl>
     <p class="note-line"><span class="sn">이 페이지의 화면은 모두 가상 데이터로 재현한 화면입니다.</span> <span class="sn">숫자와 이름은 실제 서비스 수치와 무관합니다.</span></p>
@@ -62,7 +62,7 @@
     <section id="before-after">
       <div class="num">BEFORE · AFTER</div>
       <h2>같은 데이터, 읽히는 자료로</h2>
-      <figure><img src="assets/img/ai/ai-compare-first-v3.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽 비포(기준 적용 전·검수 전)는 표만 이어지는 구성, 오른쪽 애프터(검수 후 개선된 결과)는 섹션마다 한 줄 설명 다음에 기준, 결과, 그래프 순서로 정리한 구성" loading="lazy" width="1516" height="912"><figcaption>가상 데이터로 재현한 화면 · 왼쪽 비포(기준 적용 전·검수 전), 오른쪽 애프터(검수 후 개선된 결과)</figcaption></figure>
+      <figure><a class="zoom" href="assets/img/ai/ai-compare-first-v3.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-compare-first-v3.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽 비포(기준 적용 전·검수 전)는 표만 이어지는 구성, 오른쪽 애프터(검수 후 개선된 결과)는 섹션마다 한 줄 설명 다음에 기준, 결과, 그래프 순서로 정리한 구성" loading="lazy" width="1516" height="912"></a><figcaption>가상 데이터로 재현한 화면 · 왼쪽 비포(기준 적용 전·검수 전), 오른쪽 애프터(검수 후 개선된 결과)</figcaption></figure>
       <table class="t t-fluid"><tbody>
         <tr><td class="k">같은 질문</td><td>"상위 10%는 어느 난이도부터인가?"</td></tr>
         <tr><td class="k">비포</td><td>누적 비율 행을 눈으로 따라가며 10%를 넘는 칸을 찾아야 했습니다.</td></tr>
@@ -92,7 +92,7 @@
       <div class="num">REVIEW · RULES</div>
       <h2><span class="cl">여러 AI로 검수하고,</span> <span class="cl">고친 기준은 규칙으로</span></h2>
       <table class="t t-fluid"><tbody>
-        <tr><td class="k">역할</td><td><span class="sn">Claude가 만들고 검수 의견의 타당성을 정리했습니다.</span> <span class="sn">검수는 Codex와 제미나이 4 아르곤이 맡았습니다.</span> <span class="sn">최종 결정은 제가 했습니다.</span> <span class="sn">선배 기획자의 검수도 거쳤습니다.</span></td></tr>
+        <tr><td class="k">역할</td><td><span class="sn">Claude가 만들고 검수 의견의 타당성을 정리했습니다.</span> <span class="sn">검수는 Codex와 Gemini가 맡았습니다.</span> <span class="sn">최종 결정은 제가 했습니다.</span> <span class="sn">선배 기획자의 검수도 거쳤습니다.</span></td></tr>
         <tr><td class="k">검수 AI 개선</td><td><span class="sn">첫 검수는 제안 목록을 되묻는 수준이었습니다.</span> <span class="sn"><span class="cl">검수 AI에게 평가서와 검수 틀(요청서,</span> <span class="cl">사전 지식,</span> <span class="cl">확인 범위,</span> <span class="cl">답변 형식)을 줬습니다.</span></span> <span class="sn">그러자 전수 대조와 모순 찾기까지 했습니다.</span> <span class="sn">마지막 회차에는 원본과 대조해 '게시 가능'을 판정했습니다.</span></td></tr>
         <tr><td class="k">걸러낸 것</td><td><span class="sn">검수 AI는 정확성을 위해 단서와 통계 용어를 늘리는 쪽으로 제안하기도 했습니다.</span> <span class="sn"><span class="cl">독자를 헷갈리게 하는 문구는 제가 걸러내고,</span> <span class="cl">'곁가지 문구 금지' 같은 규칙으로 만들었습니다.</span></span></td></tr>
         <tr><td class="k">규칙화</td><td><span class="sn">같은 지적을 두 번 하지 않도록 고친 기준을 세 곳에 남겼습니다.</span> <span class="sn"><span class="cl">다음 담당자와 다른 AI가 읽는 지시문,</span> <span class="cl">같은 작업을 다시 여는 AI의 기억,</span> <span class="cl">모든 대화와 프로젝트에 적용되는 전역 규칙입니다.</span></span></td></tr>
@@ -103,7 +103,7 @@
       <div class="num">REDESIGN</div>
       <h2>선배와 만든 시안으로 다시 설계했습니다</h2>
       <p><span class="sn">첫 판을 만든 뒤 이틀 동안 실측 페이지와 기준 문서를 거의 새로 설계했습니다.</span> <span class="sn"><span class="cl">많이 보여 주기보다,</span> <span class="cl">꼭 필요한 것을 쉽게 보여 주는 쪽으로 바꿨습니다.</span></span></p>
-      <figure class="narrow"><img src="assets/img/ai/ai-redesign-4-5.png" alt="같은 가상 데이터로 만든 4·5번. 왼쪽은 직업군 11개 기준의 표 12개와 그림 60장, 오른쪽은 직업 53개 기준의 표와 그래프 한 장" loading="lazy" width="1174" height="1513"><figcaption>가상 데이터로 재현한 화면 · 다시 설계하기 전(왼쪽)과 후(오른쪽)의 4·5번</figcaption></figure>
+      <figure class="narrow"><a class="zoom" href="assets/img/ai/ai-redesign-4-5.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-redesign-4-5.png" alt="같은 가상 데이터로 만든 4·5번. 왼쪽은 직업군 11개 기준의 표 12개와 그림 60장, 오른쪽은 직업 53개 기준의 표와 그래프 한 장" loading="lazy" width="1174" height="1513"></a><figcaption>가상 데이터로 재현한 화면 · 다시 설계하기 전(왼쪽)과 후(오른쪽)의 4·5번</figcaption></figure>
       <table class="t t-fluid"><tbody>
         <tr><td class="k">계기</td><td><span class="cl">만든 저도 헷갈린 '평균 대비' 지표,</span> <span class="cl">선배와 함께 엑셀로 만든 그래프 시안,</span> <span class="cl">선배의 "섹션마다 한 줄 설명,</span> <span class="cl">빙빙 돌려 말하지 말 것"이 계기였습니다.</span></td></tr>
         <tr><td class="k">바꾼 것</td><td><span class="sn"><span class="cl">직업군 11개 기준의 표 12개와 그림 60장을,</span> <span class="cl">직업 53개 기준의 표 1개와 그래프 1장으로 바꿨습니다.</span></span> <span class="sn">정확한 값은 접기 표 하나에 두었습니다.</span></td></tr>
@@ -116,7 +116,7 @@
       <div class="num">BONUS · 번외편</div>
       <h2>검수해 한 번 더 덜어냈습니다</h2>
       <p><span class="sn">같은 실측 문서와 기준 문서를 제가 검수했습니다.</span> <span class="sn"><span class="cl">조사 목적에 맞지 않는 설명은 덜어 내고,</span> <span class="cl">비교할 것은 나란히 놓았습니다.</span></span> <span class="sn">바꿀 곳과 이유는 제가 정했습니다.</span></p>
-      <figure><img src="assets/img/ai/ai-bonus-compare-v3.png" alt="실측 문서 3번 비교. 왼쪽 비포(기준 적용 전·검수 전)는 클리어 기준표 하나와 설명 다섯 줄, 오른쪽 애프터(검수 후 개선된 결과)는 클리어와 50% 기록 기준표를 나란히 놓고 설명은 한 줄" loading="lazy" width="1573" height="1042"><figcaption>가상 데이터로 재현한 화면 · 실측 문서 3번 · 왼쪽 비포(기준 적용 전·검수 전), 오른쪽 애프터(검수 후 개선된 결과). 애프터에서는 클리어와 50% 기록의 차이가 한 표에서 보입니다. 애프터는 실제 주차에서 보인 모양대로 50% 기록 일부를 높은 층으로 옮긴 가상 데이터입니다.</figcaption></figure>
+      <figure><a class="zoom" href="assets/img/ai/ai-bonus-compare-v3.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-bonus-compare-v3.png" alt="실측 문서 3번 비교. 왼쪽 비포(기준 적용 전·검수 전)는 클리어 기준표 하나와 설명 다섯 줄, 오른쪽 애프터(검수 후 개선된 결과)는 클리어와 50% 기록 기준표를 나란히 놓고 설명은 한 줄" loading="lazy" width="1573" height="1042"></a><figcaption>가상 데이터로 재현한 화면 · 실측 문서 3번 · 왼쪽 비포(기준 적용 전·검수 전), 오른쪽 애프터(검수 후 개선된 결과). 애프터에서는 클리어와 50% 기록의 차이가 한 표에서 보입니다. 애프터는 실제 주차에서 보인 모양대로 50% 기록 일부를 높은 층으로 옮긴 가상 데이터입니다.</figcaption></figure>
       <table class="t t-fluid"><tbody>
         <tr><td class="k">실측 3번</td><td><span class="sn">클리어와 50% 기록의 기준표를 나란히 놓았습니다.</span> <span class="sn"><span class="cl">조사 목적이 두 기록의 차이를 보는 것이고,</span> <span class="cl">상위 5%에서 2층 차이가 나기 때문입니다.</span></span></td></tr>
         <tr><td class="k">실측 2·4·5번</td><td><span class="sn">설명과 강조만 남기고 결과는 표로 바꿨습니다.</span> <span class="sn"><span class="cl">4번 최상층은 직업·인원 표로,</span> <span class="cl">5번은 상위 1% 이내 비율 순위 표로 보여 줍니다.</span></span></td></tr>
@@ -139,7 +139,7 @@
         <li><span class="cl"><b>인수인계</b> 지시문 하나를 AI에 붙여 넣고 원본만 주면,</span> <span class="cl">다음 담당자나 다른 AI도 같은 품질로 만듭니다.</span></li>
         <li><span class="sn"><b>확대</b> 팀장 판단으로 서비스 중인 전 권역으로 넓힐 예정입니다.</span> <span class="sn">지금은 1개 권역입니다.</span></li>
       </ul>
-      <figure class="narrow-sm"><img src="assets/img/ai/ai-raw-excel.png" alt="중국어로 된 집계표 형태의 가상 원본 엑셀" loading="lazy" width="1000" height="906"><figcaption>받는 원본은 중국어 집계표입니다. 이 형태를 그대로 읽어 페이지까지 만듭니다 · 가상 숫자</figcaption></figure>
+      <figure class="narrow-sm"><a class="zoom" href="assets/img/ai/ai-raw-excel.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-raw-excel.png" alt="중국어로 된 집계표 형태의 가상 원본 엑셀" loading="lazy" width="1000" height="906"></a><figcaption>받는 원본은 중국어 집계표입니다. 이 형태를 그대로 읽어 페이지까지 만듭니다 · 가상 숫자</figcaption></figure>
     </section>
 
     <nav class="next-case">

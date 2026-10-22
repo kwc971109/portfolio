@@ -468,3 +468,6 @@ body{text-wrap:pretty}
 .th-media img.contain{object-fit:contain;background:#fff}
 @media(min-width:1101px){.quick-grid{grid-template-columns:repeat(6,1fr)}.quick-grid .qcard{grid-column:span 2}.quick-grid .qcard:nth-child(n+4){grid-column:span 3;flex-direction:row}.quick-grid .qcard:nth-child(n+4) .qmedia{width:42%;flex:none;aspect-ratio:auto;min-height:100%}}
 @media(min-width:901px) and (max-width:1100px){.quick-grid .qcard:nth-child(5){grid-column:1/-1;flex-direction:row}.quick-grid .qcard:nth-child(5) .qmedia{width:42%;flex:none;aspect-ratio:auto;min-height:100%}}
+
+/* 2026-10-23a 글자가 작은 그림은 누르면 새 탭에서 원본 크기로 연다 */
+a.zoom{display:block;cursor:zoom-in}

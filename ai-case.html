@@ -28,7 +28,7 @@
     <a href="index.html">← 메인으로</a>
     <p>AI WORKFLOW</p>
     <h1>AI 활용 사례 2건</h1>
-    <p><span class="sn">UE5 개인 레벨은 AI에게 구현과 검수를 맡겨 만들었습니다.</span> <span class="sn"><span class="cl">현업에서는 지표 로그를 새로 만들고,</span> <span class="cl">주간 분석을 AI로 자동화했습니다.</span></span></p>
+    <p><span class="sn">UE5 개인 레벨은 AI에게 구현과 검수를 맡겨 만들었습니다.</span> <span class="sn"><span class="cl">현업에서는 지표 로그를 새로 만들고,</span> <span class="cl">주간 분석을 AI로 자동화했습니다.</span></span> <span class="sn"><span class="cl">반복 작업은 AI에게 맡기고,</span> <span class="cl">기준과 판단은 제가 했습니다.</span></span></p>
   </div>
 </div>
 
@@ -45,11 +45,11 @@
         </span>
       </a>
       <a class="pick" href="#data">
-        <img class="contain" src="assets/img/ai/ai-after-group4.png" alt="" width="1310" height="774">
+        <img class="contain" src="assets/img/ai/ai-after-group4-v2.png" alt="" width="1600" height="686">
         <span class="pb">
           <span class="k">② 현 직장 업무 · 데이터</span>
           <span class="pt">지표 로그 구축과 주간 분석 자동화</span>
-          <span class="pd"><span class="sn">측정 데이터가 없던 콘텐츠에 로그를 새로 넣었습니다.</span> <span class="sn">지금은 원본 엑셀만 넣으면 몇 초 만에 그래프 63장·표 17개 페이지가 나옵니다.</span> <span class="sn">(화면은 가상 데이터로 재현)</span></span>
+          <span class="pd"><span class="sn">측정 데이터가 없던 콘텐츠에 로그를 새로 넣었습니다.</span> <span class="sn">지금은 원본 엑셀만 넣으면 몇 초 만에 표 7개·그래프 4장이 든 페이지가 나옵니다.</span> <span class="sn">(화면은 가상 데이터로 재현)</span></span>
           <span class="go">아래에서 보기 ↓</span>
         </span>
       </a>
@@ -61,10 +61,10 @@
       <p><span class="cl">측정 데이터가 없던 콘텐츠에 로그를 새로 넣고,</span> <span class="cl">AI와 함께 비전문가 기획자도 바로 읽는 주간 자료와 매주 자동으로 나오는 파이프라인을 만들었습니다.</span></p>
     </section>
     <dl class="spec">
-      <div><dt>PERIOD</dt><dd>로그 요청부터 자동화까지 약 2개월 · AI 작업 약 1주</dd></div>
+      <div><dt>PERIOD</dt><dd>로그 요청부터 자동화까지 약 2개월 · AI 작업 약 열흘(실작업 7일)</dd></div>
       <div><dt>ROLE</dt><dd>로그 설계와 협업 요청, AI 지시와 최종 판단</dd></div>
       <div><dt>AI</dt><dd>Claude 제작 · Codex, 제미나이 4 아르곤 검수</dd></div>
-      <div><dt>OUTPUT</dt><dd>원본 엑셀 → 몇 초 만에 그래프 63장·표 17개 페이지, 게시·대조까지 자동</dd></div>
+      <div><dt>OUTPUT</dt><dd>원본 엑셀 → 몇 초 만에 표 7개·그래프 4장 페이지, 게시·대조까지 자동</dd></div>
     </dl>
     <p class="note-line"><span class="sn">이 페이지의 화면은 모두 가상 데이터로 재현한 화면입니다.</span> <span class="sn">숫자와 이름은 실제 서비스 수치와 무관합니다.</span></p>
 
@@ -84,7 +84,7 @@
     <section id="before-after">
       <div class="num">BEFORE · AFTER</div>
       <h2>같은 데이터, 읽히는 자료로</h2>
-      <figure><img src="assets/img/ai/ai-compare-first.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽은 표만 이어지는 초기 구성, 오른쪽은 기준·결과·그래프 순서로 정리한 현재 버전" loading="lazy" width="1516" height="912"><figcaption>가상 데이터로 재현한 화면 · 같은 가상 데이터로 만든 초기 구성(왼쪽)과 현재 버전(오른쪽)</figcaption></figure>
+      <figure><img src="assets/img/ai/ai-compare-first-v2.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽은 표만 이어지는 초기 구성, 오른쪽은 섹션마다 한 줄 설명 다음에 기준, 결과, 그래프 순서로 정리한 지금 버전" loading="lazy" width="1516" height="912"><figcaption>가상 데이터로 재현한 화면 · AI의 첫 결과(초기 구성, 왼쪽)와 지금 회사에서 쓰는 버전(오른쪽)</figcaption></figure>
       <table class="t t-fluid"><tbody>
         <tr><td class="k">같은 질문</td><td>"상위 10%는 어느 난이도부터인가?"</td></tr>
         <tr><td class="k">비포</td><td>누적 비율 행을 눈으로 따라가며 10%를 넘는 칸을 찾아야 했습니다.</td></tr>
@@ -121,20 +121,45 @@
       </tbody></table>
     </section>
 
+    <section id="redesign">
+      <div class="num">REDESIGN</div>
+      <h2>선배와 만든 시안으로 다시 설계했습니다</h2>
+      <p><span class="sn">첫 판을 만든 뒤 이틀 동안 실측 페이지와 기준 문서를 거의 새로 설계했습니다.</span> <span class="sn"><span class="cl">많이 보여 주기보다,</span> <span class="cl">꼭 필요한 것을 쉽게 보여 주는 쪽으로 바꿨습니다.</span></span></p>
+      <figure class="narrow"><img src="assets/img/ai/ai-redesign-4-5.png" alt="같은 가상 데이터로 만든 4·5번. 왼쪽은 직업군 11개 기준의 표 12개와 그림 60장, 오른쪽은 직업 53개 기준의 표와 그래프 한 장" loading="lazy" width="1174" height="1513"><figcaption>가상 데이터로 재현한 화면 · 다시 설계하기 전(왼쪽)과 후(오른쪽)의 4·5번</figcaption></figure>
+      <table class="t t-fluid"><tbody>
+        <tr><td class="k">계기</td><td><span class="cl">만든 저도 헷갈린 '평균 대비' 지표,</span> <span class="cl">선배와 함께 엑셀로 만든 그래프 시안,</span> <span class="cl">선배의 "섹션마다 한 줄 설명,</span> <span class="cl">빙빙 돌려 말하지 말 것"이 계기였습니다.</span></td></tr>
+        <tr><td class="k">바꾼 것</td><td><span class="sn"><span class="cl">직업군 11개 기준의 표 12개와 그림 60장을,</span> <span class="cl">직업 53개 기준의 표 1개와 그래프 1장으로 바꿨습니다.</span></span> <span class="sn">정확한 값은 접기 표 하나에 두었습니다.</span></td></tr>
+        <tr><td class="k">맡기고 검토</td><td><span class="sn"><span class="cl">퇴근하며 AI에게 일을 통째로 맡기고,</span> <span class="cl">다음 날 결과를 직접 읽어 바로잡았습니다.</span></span> <span class="sn"><span class="cl">그래프로 요청한 부분이 표로 나온 일은 "시안의 형태는 바꾸지 않고,</span> <span class="cl">바꾸고 싶으면 따로 묻는다"는 규칙으로 남겼습니다.</span></span></td></tr>
+        <tr><td class="k">결과</td><td><span class="sn"><span class="cl">그림 63장은 4장,</span> <span class="cl">접기 35개는 3개,</span> <span class="cl">표 17개는 7개로 줄었습니다.</span></span> <span class="sn"><span class="cl">이틀 만에 1~3주차 페이지와 기준 문서,</span> <span class="cl">인수인계 문서까지 모두 반영했습니다.</span></span></td></tr>
+      </tbody></table>
+    </section>
+
+    <section id="bonus">
+      <div class="num">BONUS · 번외편</div>
+      <h2>포트폴리오용으로 한 번 더 덜어냈습니다</h2>
+      <p><span class="sn">회사에 낸 실측 문서와 기준 문서를 개인 포트폴리오용 번외편으로 다시 다듬었습니다.</span> <span class="sn">바꿀 곳과 이유는 제가 정했습니다.</span></p>
+      <figure><img src="assets/img/ai/ai-bonus-compare.png" alt="실측 문서 3번 비교. 왼쪽 회사 버전은 클리어 기준표 하나와 설명 다섯 줄, 오른쪽 번외편은 클리어와 50% 기록 기준표를 나란히 놓고 설명은 한 줄" loading="lazy" width="1573" height="1042"><figcaption>가상 데이터로 재현한 화면 · 실측 문서 3번, 회사에 낸 버전(왼쪽)과 번외편(오른쪽). 번외편은 실제 주차에서 보인 모양대로 50% 기록 일부를 높은 층으로 옮긴 가상 데이터입니다.</figcaption></figure>
+      <table class="t t-fluid"><tbody>
+        <tr><td class="k">실측 3번</td><td><span class="sn">클리어와 50% 기록의 기준표를 나란히 놓았습니다.</span> <span class="sn"><span class="cl">조사 목적이 두 기록의 차이를 보는 것이고,</span> <span class="cl">상위 5%에서 2층 차이가 나기 때문입니다.</span></span></td></tr>
+        <tr><td class="k">실측 2·4·5번</td><td><span class="sn">설명과 강조만 남기고 결과는 표로 바꿨습니다.</span> <span class="sn"><span class="cl">4번 최상층은 직업·인원 표로,</span> <span class="cl">5번은 상위 1% 이내 비율 순위 표로 보여 줍니다.</span></span></td></tr>
+        <tr><td class="k">실측 6번</td><td><span class="sn">접지 않고 펼쳤습니다.</span> <span class="sn">직업별 합계와 전체 인원의 차이로 직업을 바꾼 캐릭터가 얼마나 되는지 읽는 예시를 넣었습니다.</span></td></tr>
+        <tr><td class="k">기준 문서</td><td><span class="cl">실측 문서만 읽어도 되도록 읽는 법과 원본 시트 설명을 빼고,</span> <span class="cl">요청 쪽만 남겼습니다.</span></td></tr>
+        <tr><td class="k">공통</td><td>사족이 된 주의·읽는 법·참고 줄을 뺐습니다.</td></tr>
+      </tbody></table>
+    </section>
+
     <section id="automation">
       <div class="num">AUTOMATION · RESULT</div>
       <h2>원본만 넣으면 매주 나오는 자료</h2>
-      <p><span class="sn">원본 엑셀 → 원본 확인 → 집계 → 그래프 63장 → 페이지 조립(표&nbsp;17개) → 자체 검증 → 게시 → 게시 후 대조. 숫자를 추측해 채우지 않습니다.</span> <span class="sn">원본 합계가 맞지 않으면 억지로 맞추지 않고 그대로 표시합니다.</span></p>
-      <div class="duo">
-        <figure><img src="assets/img/ai/ai-after-avg-diff.png" alt="구간마다 전체 평균 대비 몇 퍼센트 많은지 적은지를 직업군별 막대로 보여 주는 그래프" loading="lazy" width="1310" height="1404"><figcaption>전체 평균 대비 구간별 차이. 파란 막대는 신뢰도가 높음, 회색 막대는 표본 수에 비해 차이가 작음 · 가상 데이터로 재현한 화면</figcaption></figure>
-        <figure><img src="assets/img/ai/ai-after-group4.png" alt="한 직업군 안에서 인원이 가장 많은 직업보다 다른 직업의 상위 10% 비중이 더 높게 나온 막대 그래프" loading="lazy" width="1310" height="774"><figcaption>한 직업군에서 인원이 가장 많은 직업보다 다른 직업의 상위 10% 비중이 높음 · 실제 자료에서 나온 발견을 가상 데이터로 재현</figcaption></figure>
-      </div>
+      <p><span class="sn">원본 엑셀 → 원본 확인 → 집계 → 그래프 4장 → 페이지 조립(표&nbsp;7개) → 자체 검증 → 게시 → 게시 후 대조. 숫자를 추측해 채우지 않습니다.</span> <span class="sn">원본 합계가 맞지 않으면 억지로 맞추지 않고 그대로 표시합니다.</span></p>
+      <figure><img src="assets/img/ai/ai-after-group4-v2.png" alt="한 직업군 안에서 인원이 가장 많은 직업보다 다른 직업의 상위 1% 이내 비율이 더 높게 나온 누적 막대 그래프" loading="lazy" width="1600" height="686"><figcaption>한 직업군에서 인원이 가장 많은 직업보다 다른 직업의 상위 1% 이내 비율이 높음 · 실제 자료에서 나온 발견을 가상 데이터로 재현</figcaption></figure>
       <ul class="plain">
         <li><b>데이터의 의미</b> 요청 배경대로 클리어 기록과 50% 기록 사이에 의미 있는 차이를 확인했습니다.</li>
         <li><b>새 발견</b> 한 직업군에서 인원이 가장 많은 직업보다 다른 직업의 상위권 비중이 더 높았습니다.</li>
-        <li><b>활용</b> 콘텐츠 파트에서 만든 자료를 밸런스·스킬 파트도 관심 있게 보고 있습니다.</li>
-        <li><span class="sn"><b>페이지</b> 표 칸이 약 1만 5천 칸에서 1천 칸 안팎으로 줄었습니다.</span> <span class="sn"><span class="cl">그래서 페이지가 가볍게 열리고,</span> <span class="cl">매주 원본을 넣으면 몇 초 만에 만들어집니다.</span></span></li>
-        <li><span class="sn"><b>확대</b> 서비스 중인 전 권역으로 넓힐 예정입니다.</span> <span class="sn">지금은 1개 권역입니다.</span></li>
+        <li><span class="cl"><b>활용</b> 기획팀 전체에 공유했고,</span> <span class="cl">밸런스·스킬 파트도 관심 있게 보고 있습니다.</span></li>
+        <li><span class="sn"><span class="cl"><b>페이지</b> 그림이 63장에서 4장으로,</span> <span class="cl">접기가 35개에서 3개로 줄었습니다.</span></span> <span class="sn">매주 원본을 넣으면 몇 초 만에 만들어집니다.</span></li>
+        <li><span class="cl"><b>인수인계</b> 지시문 하나를 AI에 붙여 넣고 원본만 주면,</span> <span class="cl">다음 담당자나 다른 AI도 같은 품질로 만듭니다.</span></li>
+        <li><span class="sn"><b>확대</b> 팀장 판단으로 서비스 중인 전 권역으로 넓힐 예정입니다.</span> <span class="sn">지금은 1개 권역입니다.</span></li>
       </ul>
       <figure class="narrow-sm"><img src="assets/img/ai/ai-raw-excel.png" alt="중국어로 된 집계표 형태의 가상 원본 엑셀" loading="lazy" width="1000" height="906"><figcaption>받는 원본은 중국어 집계표입니다. 이 형태를 그대로 읽어 페이지까지 만듭니다 · 가상 숫자</figcaption></figure>
     </section>

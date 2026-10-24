@@ -661,3 +661,7 @@ details.more p:last-child{margin-bottom:0}
 /* 2026-10-24e 첫 화면: 하로리·판옵티콘 칸과 같은 영상 두 개를 겹쳐 두고 번갈아 튼다(지금 도는 영상만 보임) */
 .hero-video video{opacity:0;transition:opacity .5s ease}
 .hero-video video.is-on{opacity:1}
+/* 2026-10-25 긴장 그래프 설명 상자: 마우스를 올리면 바로 뜬다(pacing-tip.js) */
+.pacing-tip{position:fixed;z-index:60;pointer-events:none;max-width:300px;padding:7px 11px;border-radius:8px;background:#141414;color:#f3f1ec;border:1px solid #e0ac3c;font-size:13px;line-height:1.45;font-weight:600;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.pacing-tip[hidden]{display:none}
+.pacing-svg .hit.on{fill:rgba(184,50,29,.12)}

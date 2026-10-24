@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>로그 설계·AI 분석 자동화 | 경원철 포트폴리오</title>
-  <meta name="description" content="측정 데이터가 없던 콘텐츠에 지표 로그를 새로 넣고, 주간 분석을 AI로 자동화한 현업 사례. 화면은 가상 데이터로 재현했습니다.">
+  <meta name="description" content="로그로 DB에 쌓이는 데이터가 없던 스펙 측정 콘텐츠에 로그를 새로 넣고, 주간 분석을 AI로 자동화한 현업 사례. 화면은 가상 데이터로 재현했습니다.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="assets/css/style.css?v=20261025a">
 </head>
@@ -29,7 +29,7 @@
       <a href="index.html#projects">← 전체 프로젝트</a>
       <p>DATA · 현업 · AI</p>
       <h1>로그 설계·AI 분석 자동화</h1>
-      <p>측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, 주간 분석 자료를 AI로 자동화했습니다.</p>
+      <p>허수아비처럼 스펙을 측정하는 콘텐츠인데, 로그로 DB에 쌓이는 데이터가 없어 분포를 정확히 파악할 수단이 없었습니다. 로그를 새로 넣고, 주간 분석 자료를 AI로 자동화했습니다.</p>
       <p class="hero-sub">기준과 판단은 제가, 반복 작업은 AI가 했습니다. <a href="ai-case.html">AI 활용 사례 2건 보기 →</a></p>
     </div>
     <figure class="th-media"><img class="contain" src="assets/img/ai/ai-after-group4-v2.png" alt="직업군 안의 상위 1% 이내 비율을 보여 주는 가상 데이터 그래프" width="1600" height="686"><figcaption>가상 데이터로 재현한 화면 · 직업군 안의 상위 1% 이내 비율</figcaption></figure>
@@ -41,14 +41,14 @@
     <ul class="stats stats-4">
       <li><b>63→4장</b><span>페이지 그림</span></li>
       <li><b>몇 초</b><span>원본 엑셀 → 실측 페이지</span></li>
-      <li><b>약 2개월</b><span>로그 요청부터 자동화까지</span></li>
+      <li><b>약 6주</b><span>로그 요청부터 자동화까지</span></li>
       <li><b>7일</b><span>AI 실작업 (약 열흘 중)</span></li>
     </ul>
     <p class="note-line">이 페이지의 화면은 모두 가상 데이터로 재현했습니다. 숫자와 이름은 실제 서비스 수치와 무관합니다.</p>
 
     <section id="problem">
       <div class="num">PROBLEM</div>
-      <h2>측정 데이터가 없던 콘텐츠</h2>
+      <h2><span class="cl">스펙 측정 콘텐츠인데,</span> <span class="cl">분포를 정확히 파악할 수단이 없었습니다</span></h2>
       <div class="facts">
         <div><b>문제</b><span>상위권이 스펙만 확인하고 나가, 클리어 로그로는 분포가 부정확</span></div>
         <div><b>설계</b><span>클리어하지 않아도 남는 '50% 기록'(제한 시간 절반 안에 보스 체력 50%) 로그</span></div>
@@ -64,7 +64,7 @@
 
     <section id="before-after">
       <div class="num">BEFORE · AFTER</div>
-      <h2>같은 데이터, 읽히는 자료로</h2>
+      <h2><span class="cl">같은 데이터를</span> <span class="cl">읽기 쉬운 자료로 바꿨습니다</span></h2>
       <figure class="wide"><a class="zoom" href="assets/img/ai/ai-compare-first-v3.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-compare-first-v3.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽 비포(기준 적용 전·검수 전)는 표만 이어지는 구성, 오른쪽 애프터(검수 후 개선된 결과)는 섹션마다 한 줄 설명 다음에 기준, 결과, 그래프 순서로 정리한 구성" loading="lazy" width="1516" height="912"></a><figcaption>가상 데이터로 재현한 화면 · 왼쪽 비포(기준 적용 전·검수 전), 오른쪽 애프터(검수 후 개선된 결과)</figcaption></figure>
       <div class="qa">
         <div><b>같은 질문</b>"상위 10%는 어느 난이도부터인가?"</div>
@@ -75,16 +75,16 @@
 
     <section id="how">
       <div class="num">HOW</div>
-      <h2>AI에게 고칠 곳보다 이유를 줬습니다</h2>
+      <h2><span class="cl">고칠 곳 대신 이유를 설명해</span> <span class="cl">AI 문장을 바로잡았습니다</span></h2>
       <div class="pillars">
-        <div class="pillar"><div class="k">01</div><h3>독자를 먼저 정함</h3><p>데이터 담당자와 기획자로 나누고 기준 문서도 둘로</p></div>
+        <div class="pillar"><div class="k">01</div><h3>독자를 먼저 정함</h3><p>기준 문서는 데이터 담당자용, 실측 문서는 기획자용</p></div>
         <div class="pillar"><div class="k">02</div><h3>원칙으로 지시</h3><p>한 문단엔 정보 한 종류, 표는 읽는 순서대로</p></div>
         <div class="pillar"><div class="k">03</div><h3>독자의 말로</h3><p>통계 용어·판단어 대신 사람 수와 사실로</p></div>
       </div>
-      <table class="t t-fluid"><thead><tr><th>AI가 처음 쓴 문장</th><th>고친 문장</th></tr></thead><tbody>
-        <tr><td>전체보다 뚜렷이 많은 직업군</td><td>평균보다 많은 직업군(신뢰도 높음)<br><small>'뚜렷이'는 기준이 없는 판단어</small></td></tr>
-        <tr><td>파란 막대 = 우연으로 보기 어려운 차이 · 회색 = 인원이 적어 우연일 수 있음</td><td>파란 막대는 신뢰도가 높음, 회색 막대는 표본 수에 비해 차이가 작음<br><small>'우연'은 통계 용어</small></td></tr>
-        <tr><td>직업군1 +46%: 이번 주 전체 비율대로라면 상위 10% 이내에 약 467명일 텐데 실제로는 682명 (약&nbsp;1.5배).</td><td>상위 10% 이내 평균 인원이 약 467명일 때 직업군1은 682명이라 평균 대비 +46% (약&nbsp;1.5배)<br><small>조건 → 값 → 결론 순서 · 이름과 숫자는 가상 데이터 값</small></td></tr>
+      <table class="t t-fluid"><thead><tr><th>AI가 처음 쓴 문장</th><th>실제로 고친 문장</th></tr></thead><tbody>
+        <tr><td>전체보다 뚜렷이 많은 직업군: …</td><td>평균보다 많은 직업군(신뢰도 높음): …<br><small>'뚜렷이'는 기준이 없는 판단어</small></td></tr>
+        <tr><td>파란 막대 = 우연으로 보기 어려운 차이 · 회색 = 인원이 적어 우연일 수 있음</td><td>파란 막대 = 표본 수에 비해 차이가 커서 신뢰도 높음 · 회색 = 표본 수에 비해 차이가 작음<br><small>'우연'은 통계 용어</small></td></tr>
+        <tr><td>직업군1 +46%: 이번 주 전체 비율대로라면 상위 10% 이내에 약 467명일 텐데 실제로는 682명 (약&nbsp;1.5배).</td><td>상위 10% 이내 평균 인원이 약 467명일 때 직업군1은 682명이라 평균 대비 +46% (약&nbsp;1.5배).<br><small>조건 → 값 → 결론 순서 · 이름과 숫자는 가상 데이터 값</small></td></tr>
       </tbody></table>
       <details class="more"><summary>자세히 보기</summary><div>
         <p>AI의 첫 결과물은 숫자는 정확했지만 표만 길게 이어져, 데이터 전문가가 아닌 기획자는 읽기 어려웠습니다. "정리는 깔끔한데 왜 읽기 어려운가"를 따져 원칙으로 지시했습니다.</p>
@@ -95,7 +95,7 @@
 
     <section id="review">
       <div class="num">REVIEW · RULES</div>
-      <h2>여러 AI로 검수하고, 고친 기준은 규칙으로</h2>
+      <h2><span class="cl">여러 AI로 교차 검수하고,</span> <span class="cl">고친 기준을 규칙으로 남겼습니다</span></h2>
       <div class="pillars">
         <div class="pillar"><div class="k">검수</div><h3>Codex·Gemini에 검수 틀</h3><p>평가서와 검수 틀을 주자 원본 전수 대조와 모순 찾기까지</p></div>
         <div class="pillar"><div class="k">걸러냄</div><h3>헷갈리는 제안은 직접 걸러냄</h3><p>단서·통계 용어를 늘리는 제안은 '곁가지 문구 금지' 규칙으로</p></div>
@@ -110,25 +110,25 @@
 
     <section id="redesign">
       <div class="num">REDESIGN</div>
-      <h2>그래프 시안으로 다시 설계했습니다</h2>
+      <h2><span class="cl">이해하기 어려운 지표를</span> <span class="cl">그래프 한 장으로 바꿨습니다</span></h2>
       <div class="split">
         <figure><a class="zoom" href="assets/img/ai/ai-redesign-4-5-v2.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-redesign-4-5-v2.png" alt="같은 가상 데이터로 만든 4·5번. 왼쪽 비포(그래프 시안 적용 전)는 직업군 11개 기준의 표 12개와 그림 60장, 오른쪽 애프터(그래프 시안 적용 후)는 직업 53개 기준의 표와 그래프 한 장" loading="lazy" width="1174" height="1513"></a><figcaption>가상 데이터로 재현한 화면 · 4·5번 · 왼쪽 비포(그래프 시안 적용 전), 오른쪽 애프터(그래프 시안 적용 후)</figcaption></figure>
         <div class="facts col">
-          <div><b>계기</b><span>만든 저도 헷갈린 '평균 대비' 지표</span></div>
+          <div><b>비포</b><span>이해하기 어려웠던 기존 기준 '평균 대비 %'</span></div>
+          <div><b>애프터</b><span>직업마다 클리어 인원을 100%로 두고 구간별 비율을 보는 '직업별 구간 비율'</span></div>
           <div><b>바꾼 것</b><span>직업군 11개 기준 표 12개·그림 60장 → 직업 53개 기준 표 1개·그래프 1장</span></div>
-          <div><b>맡기고 검토</b><span>퇴근 전 AI에 통째로 맡기고, 다음 날 직접 읽어 바로잡음</span></div>
           <div><b>결과</b><span>그림 63장 → 4장, 이틀 만에 1~3주차·기준 문서·인수인계까지 반영</span></div>
         </div>
       </div>
       <details class="more"><summary>자세히 보기</summary><div>
         <p>첫 판을 만든 뒤 이틀 동안 실측 페이지와 기준 문서를 거의 새로 설계했습니다. 엑셀로 만든 그래프 시안과 '섹션마다 한 줄 설명, 빙빙 돌려 말하지 않기'라는 원칙을 기준으로 삼았습니다.</p>
-        <p>정확한 값은 접기 표 하나에 두었습니다. 그래프로 요청한 부분이 표로 나온 일은 "시안의 형태는 바꾸지 않고, 바꾸고 싶으면 따로 묻는다"는 규칙으로 남겼습니다.</p>
+        <p>정확한 값은 접기 표 하나에 두었습니다.</p>
       </div></details>
     </section>
 
     <section id="bonus">
       <div class="num">BEFORE · AFTER</div>
-      <h2>검수해 한 번 더 덜어냈습니다</h2>
+      <h2><span class="cl">검수로 결과가</span> <span class="cl">한눈에 보이게 개선했습니다</span></h2>
       <figure class="wide"><a class="zoom" href="assets/img/ai/ai-bonus-compare-v3.png" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/ai/ai-bonus-compare-v3.png" alt="실측 문서 3번 비교. 왼쪽 비포(기준 적용 전·검수 전)는 클리어 기준표 하나와 설명 다섯 줄, 오른쪽 애프터(검수 후 개선된 결과)는 클리어와 50% 기록 기준표를 나란히 놓고 설명은 한 줄" loading="lazy" width="1573" height="1042"></a><figcaption>가상 데이터로 재현한 화면 · 실측 문서 3번 · 왼쪽 비포(기준 적용 전·검수 전), 오른쪽 애프터(검수 후 개선된 결과). 애프터는 실제 주차에서 보인 모양대로 50% 기록 일부를 높은 층으로 옮긴 가상 데이터입니다.</figcaption></figure>
       <div class="facts">
         <div><b>실측 3번</b><span>클리어와 50% 기록 기준표를 나란히 (상위 5%에서 2층 차이)</span></div>
@@ -140,7 +140,7 @@
 
     <section id="automation">
       <div class="num">AUTOMATION · RESULT</div>
-      <h2>원본만 넣으면 매주 나오는 자료</h2>
+      <h2><span class="cl">원본 엑셀에서 게시까지,</span> <span class="cl">주간 분석 자동화 파이프라인 구축</span></h2>
       <ol class="flow">
         <li class="hl"><span>원본 엑셀</span></li><li><span>원본 확인</span></li><li><span>집계</span></li><li><span>그래프</span></li><li><span>실측 페이지 조립</span></li><li><span>자체 검증</span></li><li><span>게시</span></li><li class="hl"><span>게시 후 대조</span></li>
       </ol>

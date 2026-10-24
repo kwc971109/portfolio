@@ -14,11 +14,26 @@
     if (v && !v.getAttribute('src') && v.dataset.src) v.src = v.dataset.src;
   }
 
-  var hero = document.querySelector('.hero-video video');
-  play(hero);
+  // 첫 화면 영상이 여러 개면 하나가 끝날 때 다음 것으로 넘기고, 마지막 다음엔 처음으로 돌아간다
+  var heroes = document.querySelectorAll('.hero-video video');
+  function heroOn() {
+    return document.querySelector('.hero-video video.is-on') || heroes[0];
+  }
+  heroes.forEach(function (v, k) {
+    v.addEventListener('ended', function () {
+      var next = heroes[(k + 1) % heroes.length];
+      if (next !== v) v.pause();
+      v.classList.remove('is-on');
+      next.classList.add('is-on');
+      next.currentTime = 0;
+      play(next);
+    });
+  });
+  play(heroOn());
   ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (type) {
     window.addEventListener(type, function () {
-      if (hero && hero.paused) play(hero);
+      var h = heroOn();
+      if (h && h.paused) play(h);
     }, { once: true, passive: true });
   });
 

@@ -34,11 +34,11 @@
   document.querySelectorAll('[data-gallery]').forEach(function (g) {
     var v = g.querySelector('.g-video'), img = g.querySelector('.g-img');
     var thumbs = g.querySelectorAll('.g-thumb');
-    g.mode = 'video';
+    g.mode = v ? 'video' : 'img';
     thumbs.forEach(function (t) {
       t.addEventListener('click', function () {
         thumbs.forEach(function (x) { x.setAttribute('aria-pressed', x === t ? 'true' : 'false'); });
-        if (t.dataset.type === 'video') {
+        if (t.dataset.type === 'video' && v) {
           g.mode = 'video';
           img.hidden = true;
           v.hidden = false;
@@ -46,14 +46,15 @@
           play(v);
         } else {
           g.mode = 'img';
-          v.pause();
+          if (v) { v.pause(); v.hidden = true; }
           img.src = t.dataset.src;
           img.alt = t.getAttribute('aria-label') || '';
           img.hidden = false;
-          v.hidden = true;
         }
       });
     });
+    // 움짤이 없는 갤러리(사진만)는 지켜볼 필요가 없다
+    if (!v) return;
     if (watcher) watcher.observe(g); else { load(v); play(v); }
   });
 })();

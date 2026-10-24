@@ -6,7 +6,7 @@
   <title>경원철 | Content Designer Portfolio</title>
   <meta name="description" content="레벨과 전투를 기획하는 콘텐츠 기획자 경원철의 포트폴리오">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261024a">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261024c">
 </head>
 <body><a class="skip-link" href="#main-content">본문 바로가기</a>
 
@@ -42,59 +42,121 @@
       <div class="section-head"><h2>Projects</h2></div>
       <div class="pcards">
 
-        <article class="pcard">
-          <a class="banner" href="harori.html">
-            <img src="assets/img/harori-hero-1600.jpg" srcset="assets/img/harori-hero-1600.jpg 1600w, assets/img/harori-hero-3200.jpg 3200w" sizes="(max-width:1120px) 100vw, 1072px" alt="하로리 선셋 페스타. 노을 진 섬의 콘서트 무대와 불꽃 사이를 달리는 플레이어" loading="lazy">
-            <div class="info">
-              <div><span class="k">LIVE 2026.10 · 이벤트 레벨</span><h3>하로리 선셋 페스타</h3><p>같은 코스만 반복하던 레이싱을 섬 전체를 달리는 수집 레벨로 바꿨습니다.</p></div>
-              <span class="go">자세히 보기</span>
+        <article class="pcard" aria-labelledby="p-harori">
+          <header class="phead">
+            <div>
+              <span class="k">LIVE 2026.10 · 이벤트 레벨</span>
+              <h3 id="p-harori"><a href="harori.html">하로리 선셋 페스타</a></h3>
+              <p>같은 코스만 반복하던 레이싱을 섬 전체를 달리는 수집 레벨로 바꿨습니다.</p>
             </div>
-          </a>
-          <div class="pfoot">
-            <a class="thumbs" href="harori.html" tabindex="-1" aria-hidden="true"><img src="assets/img/harori-zonemap.jpg" alt="" loading="lazy"><img src="assets/img/harori-blockout.jpg" alt="" loading="lazy"><img src="assets/img/harori-special.jpg" alt="" loading="lazy"><img src="assets/img/harori-finale.jpg" alt="" loading="lazy"><img src="assets/img/harori-jumppad-live.jpg" alt="" loading="lazy"></a>
-            <div class="sub-links"><a href="https://youtu.be/pRq1Fm1yATo" target="_blank" rel="noopener">영상 ▶</a><a href="https://drive.google.com/file/d/16sm19gZxOPFpXuxkxnyS8wrFdIVACJdW/view" target="_blank" rel="noopener">기획서 ↗</a></div>
+            <div class="pbtns">
+              <a class="btn btn-primary" href="harori.html">자세히 보기 →</a>
+              <a class="btn btn-ghost" href="https://youtu.be/pRq1Fm1yATo" target="_blank" rel="noopener">영상 ▶</a>
+              <a class="btn btn-ghost" href="https://drive.google.com/file/d/16sm19gZxOPFpXuxkxnyS8wrFdIVACJdW/view" target="_blank" rel="noopener">기획서 ↗</a>
+            </div>
+          </header>
+          <div class="gallery" data-gallery>
+            <div class="g-main">
+              <video class="g-video" muted loop playsinline preload="none" poster="assets/media/card-harori-poster.jpg" data-src="assets/media/card-harori.mp4" aria-label="하로리 선셋 페스타 플레이 장면. 축제 무대 아치 밑을 달리는 플레이어"></video>
+              <img class="g-img" alt="" hidden>
+            </div>
+            <div class="g-thumbs">
+              <button type="button" class="g-thumb" data-type="video" aria-pressed="true" aria-label="플레이 움짤"><img src="assets/media/card-harori-thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>
+              <button type="button" class="g-thumb" data-src="assets/img/harori-hero-1600.jpg" aria-pressed="false" aria-label="노을 진 섬의 콘서트 무대와 불꽃 사이를 달리는 플레이어"><img src="assets/img/harori-hero-1600.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/harori-zonemap.jpg" aria-pressed="false" aria-label="스테이지 탑뷰 블록아웃. 중앙 일반 존, 외곽 스페셜 존, 스타트 존, 클리어 존"><img src="assets/img/harori-zonemap.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/harori-blockout.jpg" aria-pressed="false" aria-label="스페셜 존 점프 구간 블록아웃"><img src="assets/img/harori-blockout.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/harori-special.jpg" aria-pressed="false" aria-label="스페셜 존 2 도착 지점의 무대형 플랫폼"><img src="assets/img/harori-special.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/harori-finale.jpg" aria-pressed="false" aria-label="클리어 존. 하로리 콘서트 무대 앞에서 팬들이 응원하는 장면"><img src="assets/img/harori-finale.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/harori-jumppad-live.jpg" aria-pressed="false" aria-label="라이브에 적용된 점프대"><img src="assets/img/harori-jumppad-live.jpg" alt="" loading="lazy"></button>
+            </div>
           </div>
         </article>
 
-        <article class="pcard">
-          <a class="banner" href="p2-level.html">
-            <img src="assets/img/p2/p2-hdr-chase.jpg" alt="PANOPTICON 상층부 추격. 높은 곳의 감시자 키클롭스와 달리는 플레이어" loading="lazy">
-            <div class="info">
-              <div><span class="k">UE5 개인 레벨 · AI 제작</span><h3>PANOPTICON</h3><p>보이지 않는 감시자의 위압감을 노린 7구역 추격 레벨입니다.</p></div>
-              <span class="go">자세히 보기</span>
+        <article class="pcard" aria-labelledby="p-p2">
+          <header class="phead">
+            <div>
+              <span class="k">UE5 개인 레벨 · AI 제작</span>
+              <h3 id="p-p2"><a href="p2-level.html">PANOPTICON</a></h3>
+              <p>보이지 않는 감시자의 위압감을 노린 7구역 추격 레벨입니다.</p>
             </div>
-          </a>
-          <div class="pfoot">
-            <a class="thumbs" href="p2-level.html" tabindex="-1" aria-hidden="true"><img src="assets/img/p2/p2-topview.jpg" alt="" loading="lazy"><img src="assets/img/p2/p2-z1-opening.jpg" alt="" loading="lazy"><img src="assets/img/p2/p2-z2-river.jpg" alt="" loading="lazy"><img src="assets/img/p2/p2-case-cyclops-reveal.jpg" alt="" loading="lazy"><img src="assets/img/p2/p2-z6-qte.jpg" alt="" loading="lazy"></a>
-            <div class="sub-links"><a href="https://youtu.be/cQ7xSzbySPs" target="_blank" rel="noopener">영상 ▶</a><a href="p2-level.html#role">AI 역할 분담</a></div>
+            <div class="pbtns">
+              <a class="btn btn-primary" href="p2-level.html">자세히 보기 →</a>
+              <a class="btn btn-ghost" href="https://youtu.be/cQ7xSzbySPs" target="_blank" rel="noopener">영상 ▶</a>
+              <a class="btn btn-ghost" href="p2-level.html#role">AI 역할 분담</a>
+            </div>
+          </header>
+          <div class="gallery" data-gallery>
+            <div class="g-main">
+              <video class="g-video" muted loop playsinline preload="none" poster="assets/media/card-p2-poster.jpg" data-src="assets/media/card-p2.mp4" aria-label="PANOPTICON 플레이 장면. 서치라이트가 강물을 훑으며 헤엄치는 플레이어에게 다가옴"></video>
+              <img class="g-img" alt="" hidden>
+            </div>
+            <div class="g-thumbs">
+              <button type="button" class="g-thumb" data-type="video" aria-pressed="true" aria-label="플레이 움짤"><img src="assets/media/card-p2-thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>
+              <button type="button" class="g-thumb" data-src="assets/img/p2/p2-hdr-chase.jpg" aria-pressed="false" aria-label="상층부 추격. 높은 곳의 감시자 키클롭스와 달리는 플레이어"><img src="assets/img/p2/p2-hdr-chase.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/p2/p2-topview.jpg" aria-pressed="false" aria-label="레벨 탑뷰. 달동네에서 시작해 관문, 도시, 지하 수로, 공사장을 지나 상층부와 연구소로 이어지는 동선"><img src="assets/img/p2/p2-topview.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/p2/p2-z1-opening.jpg" aria-pressed="false" aria-label="달동네 골목에서 레이저에 맞은 NPC가 흰 입자로 흩어지는 장면"><img src="assets/img/p2/p2-z1-opening.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/p2/p2-z2-river.jpg" aria-pressed="false" aria-label="강 샛길을 건너는 플레이어"><img src="assets/img/p2/p2-z2-river.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/p2/p2-case-cyclops-reveal.jpg" aria-pressed="false" aria-label="도시 하늘에 떠 있는 붉은 눈의 키클롭스"><img src="assets/img/p2/p2-case-cyclops-reveal.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/p2/p2-z6-qte.jpg" aria-pressed="false" aria-label="레이저 탑 앞에서 차지 펀치를 모으는 플레이어와 ‘좌클릭 홀드’ 안내"><img src="assets/img/p2/p2-z6-qte.jpg" alt="" loading="lazy"></button>
+            </div>
           </div>
         </article>
 
-        <article class="pcard">
-          <a class="banner" href="yuyoung.html">
-            <img src="assets/img/yy/yy-p7-windup-hd.jpg" alt="진천검 유영. 검을 들고 공격을 준비하는 보스와 그 앞의 플레이어" loading="lazy">
-            <div class="info">
-              <div><span class="k">LIVE 2026.05 · 1:1 보스 전투</span><h3>진천검(震天劍) 유영</h3><p>땅을 뒤흔드는 지진과 광범위 공격을 콘셉트로 잡은 무협풍 보스입니다.</p></div>
-              <span class="go">자세히 보기</span>
+        <article class="pcard" aria-labelledby="p-yy">
+          <header class="phead">
+            <div>
+              <span class="k">LIVE 2026.05 · 1:1 보스 전투</span>
+              <h3 id="p-yy"><a href="yuyoung.html">진천검(震天劍) 유영</a></h3>
+              <p>땅을 뒤흔드는 지진과 광범위 공격을 콘셉트로 잡은 무협풍 보스입니다.</p>
             </div>
-          </a>
-          <div class="pfoot">
-            <a class="thumbs" href="yuyoung.html" tabindex="-1" aria-hidden="true"><img src="assets/img/yy/yy-p6-slash.jpg" alt="" loading="lazy"><img src="assets/img/yy/yy-p8-aim.jpg" alt="" loading="lazy"><img src="assets/img/yy/yy-p8-plant.jpg" alt="" loading="lazy"><img src="assets/img/yy/yy-p8-sword-poster.jpg" alt="" loading="lazy"></a>
-            <div class="sub-links"><a href="https://drive.google.com/file/d/1cus_j6fllo81xV2IocUiyh0Jw5Xjn38N/view" target="_blank" rel="noopener">기획서 ↗</a><a href="https://drive.google.com/file/d/1qgg64h_GRLrP0hixR2niwQQgZmG_0O74/view" target="_blank" rel="noopener">QA ↗</a></div>
+            <div class="pbtns">
+              <a class="btn btn-primary" href="yuyoung.html">자세히 보기 →</a>
+              <a class="btn btn-ghost" href="https://drive.google.com/file/d/1cus_j6fllo81xV2IocUiyh0Jw5Xjn38N/view" target="_blank" rel="noopener">기획서 ↗</a>
+              <a class="btn btn-ghost" href="https://drive.google.com/file/d/1qgg64h_GRLrP0hixR2niwQQgZmG_0O74/view" target="_blank" rel="noopener">QA ↗</a>
+            </div>
+          </header>
+          <div class="gallery" data-gallery>
+            <div class="g-main">
+              <video class="g-video" muted loop playsinline preload="none" poster="assets/img/yy/yy-p8-sword-poster.jpg" data-src="assets/media/yy-p8-sword.mp4" aria-label="유도 검 패턴 반복 영상. 붉은 조준선이 플레이어를 따라가다 검이 꽂힌 자리가 폭발한다"></video>
+              <img class="g-img" alt="" hidden>
+            </div>
+            <div class="g-thumbs">
+              <button type="button" class="g-thumb" data-type="video" aria-pressed="true" aria-label="유도 검 패턴 움짤"><img src="assets/img/yy/yy-p8-sword-poster.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>
+              <button type="button" class="g-thumb" data-src="assets/img/yy/yy-p7-windup-hd.jpg" aria-pressed="false" aria-label="검을 들고 공격을 준비하는 보스 유영과 그 앞의 플레이어"><img src="assets/img/yy/yy-p7-windup-hd.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/yy/yy-p6-slash.jpg" aria-pressed="false" aria-label="넓게 휘두르는 유영의 베기 공격"><img src="assets/img/yy/yy-p6-slash.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/yy/yy-p8-aim.jpg" aria-pressed="false" aria-label="붉은 조준선이 플레이어를 따라가는 유도 검 패턴"><img src="assets/img/yy/yy-p8-aim.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/yy/yy-p8-plant.jpg" aria-pressed="false" aria-label="유도 검이 꽂힌 자리가 터지는 장면"><img src="assets/img/yy/yy-p8-plant.jpg" alt="" loading="lazy"></button>
+            </div>
           </div>
         </article>
 
-        <article class="pcard">
-          <a class="banner" href="last-sanctuary.html">
-            <img src="assets/img/ls/ls-redmoon-hd.jpg" alt="Last Sanctuary. 붉은 달 아래 늑대들과 싸우는 플레이어" loading="lazy">
-            <div class="info">
-              <div><span class="k">TEAM · Unity 2D 액션</span><h3>Last Sanctuary</h3><p>“전투가 밋밋하다”는 피드백을 퍼펙트 가드와 궁극기 연출로 풀었습니다.</p></div>
-              <span class="go">자세히 보기</span>
+        <article class="pcard" aria-labelledby="p-ls">
+          <header class="phead">
+            <div>
+              <span class="k">TEAM · Unity 2D 액션</span>
+              <h3 id="p-ls"><a href="last-sanctuary.html">Last Sanctuary</a></h3>
+              <p>“전투가 밋밋하다”는 피드백을 퍼펙트 가드와 궁극기 연출로 풀었습니다.</p>
             </div>
-          </a>
-          <div class="pfoot">
-            <a class="thumbs" href="last-sanctuary.html" tabindex="-1" aria-hidden="true"><img src="assets/img/ls/ls-beam.jpg" alt="" loading="lazy"><img src="assets/img/ls/ls-guard.jpg" alt="" loading="lazy"><img src="assets/img/ls/ls-boss.jpg" alt="" loading="lazy"><img src="assets/img/ls/ls-map.jpg" alt="" loading="lazy"><img src="assets/img/ls/ls-fsm.jpg" alt="" loading="lazy"></a>
-            <div class="sub-links"><a href="https://www.youtube.com/playlist?list=PLyainrL8kp4VXP8WN7enmQVcmlPgedysI" target="_blank" rel="noopener">영상 ▶</a><a href="https://drive.google.com/drive/folders/1A1lhYMhQu5JnO6vW0W7uRO7llHEVnUqV" target="_blank" rel="noopener">기획서 ↗</a></div>
+            <div class="pbtns">
+              <a class="btn btn-primary" href="last-sanctuary.html">자세히 보기 →</a>
+              <a class="btn btn-ghost" href="https://www.youtube.com/playlist?list=PLyainrL8kp4VXP8WN7enmQVcmlPgedysI" target="_blank" rel="noopener">영상 ▶</a>
+              <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1A1lhYMhQu5JnO6vW0W7uRO7llHEVnUqV" target="_blank" rel="noopener">기획서 ↗</a>
+            </div>
+          </header>
+          <div class="gallery" data-gallery>
+            <div class="g-main">
+              <video class="g-video" muted loop playsinline preload="none" poster="assets/media/card-ls-poster.jpg" data-src="assets/media/card-ls.mp4" aria-label="Last Sanctuary 보스전 장면. 베기 공격 뒤 화면이 붉은 실루엣으로 바뀌는 연출"></video>
+              <img class="g-img" alt="" hidden>
+            </div>
+            <div class="g-thumbs">
+              <button type="button" class="g-thumb" data-type="video" aria-pressed="true" aria-label="보스전 움짤"><img src="assets/media/card-ls-thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true">▶</span></button>
+              <button type="button" class="g-thumb" data-src="assets/img/ls/ls-redmoon-hd.jpg" aria-pressed="false" aria-label="붉은 달 아래 늑대들과 싸우는 플레이어"><img src="assets/img/ls/ls-redmoon-hd.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/ls/ls-guard.jpg" aria-pressed="false" aria-label="퍼펙트 가드로 적의 공격을 받아 내는 플레이어"><img src="assets/img/ls/ls-guard.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/ls/ls-beam.jpg" aria-pressed="false" aria-label="보스의 광선 공격"><img src="assets/img/ls/ls-beam.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/ls/ls-boss.jpg" aria-pressed="false" aria-label="종이 달린 세이브 지점"><img src="assets/img/ls/ls-boss.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/ls/ls-map.jpg" aria-pressed="false" aria-label="2구역 지도"><img src="assets/img/ls/ls-map.jpg" alt="" loading="lazy"></button>
+              <button type="button" class="g-thumb" data-src="assets/img/ls/ls-fsm.jpg" aria-pressed="false" aria-label="보스 상태 구조(FSM) 설계표"><img src="assets/img/ls/ls-fsm.jpg" alt="" loading="lazy"></button>
+            </div>
           </div>
         </article>
 
@@ -104,32 +166,36 @@
 
   <section class="block" id="ai">
     <div class="wrap">
-      <div class="section-head"><h2>AI 활용</h2><p>개인 레벨은 AI로 만들고, 현업 주간 분석은 AI로 자동화했습니다.</p></div>
-      <a class="ai-feature" href="data-case.html">
-        <div class="af-media"><img src="assets/img/ai/ai-compare-first-v3.png" alt="같은 가상 데이터로 만든 두 화면. 왼쪽 비포(기준 적용 전·검수 전)는 표만 이어지고, 오른쪽 애프터(검수 후 개선된 결과)는 섹션마다 한 줄 설명과 그래프로 정리" loading="lazy" width="1516" height="912"></div>
-        <div class="af-body">
+      <div class="section-head">
+        <div><h2>AI 활용</h2><p>개인 레벨은 AI로 만들고, 현업 주간 분석은 AI로 자동화했습니다.</p></div>
+        <a class="btn btn-ghost" href="ai-case.html">AI 활용 사례 전체 보기 →</a>
+      </div>
+      <div class="ai-pair">
+        <article class="ai-card">
           <span class="k">현업 · 데이터 · AI</span>
           <h3>로그 설계·AI 분석 자동화</h3>
-          <p>측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, 주간 분석을 AI로 자동화했습니다.</p>
+          <a class="btn btn-primary" href="data-case.html">자세히 보기 →</a>
+          <a class="ai-media doc" href="data-case.html" tabindex="-1" aria-hidden="true"><img src="assets/img/ai/ai-compare-first-v3.png" alt="" loading="lazy" width="1516" height="912"></a>
           <ul class="stats">
             <li><b>63→4장</b><span>페이지 그림</span></li>
             <li><b>몇 초</b><span>원본 엑셀 → 실측 페이지</span></li>
             <li><b>약 2개월</b><span>로그 요청부터 자동화까지</span></li>
           </ul>
-          <p class="note-line">화면은 가상 데이터로 재현했습니다.</p>
-          <span class="go">자세히 보기 →</span>
-        </div>
-      </a>
-      <a class="ai-sub" href="p2-level.html#role">
-        <img src="assets/img/p2/p2-z6-qte.jpg" alt="" loading="lazy">
-        <div>
+          <p class="note-line">측정 데이터가 없던 콘텐츠에 로그를 새로 넣고, 주간 분석을 AI로 자동화했습니다. 화면은 가상 데이터로 재현했습니다.</p>
+        </article>
+        <article class="ai-card">
           <span class="k">개인 프로젝트 · UE5</span>
-          <b>PANOPTICON — AI로 만든 7구역 레벨</b>
-          <span class="d">기획·배치·대사는 직접, 구현은 Claude Code, 통합 검수는 Codex에 맡겼습니다.</span>
-        </div>
-        <span class="go">AI 역할 분담 보기 →</span>
-      </a>
-      <p class="section-more"><a href="ai-case.html">AI 활용 사례 전체 보기 →</a></p>
+          <h3>PANOPTICON — AI로 만든 7구역 레벨</h3>
+          <a class="btn btn-primary" href="p2-level.html#role">AI 역할 분담 보기 →</a>
+          <a class="ai-media" href="p2-level.html#role" tabindex="-1" aria-hidden="true"><img src="assets/img/p2/p2-z6-qte.jpg" alt="" loading="lazy"></a>
+          <ul class="stats">
+            <li><b>7구역</b><span>체크포인트 2곳</span></li>
+            <li><b>약 2개월</b><span>개인 작업</span></li>
+            <li><b>AI 2종</b><span>구현 Claude Code · 검수 Codex</span></li>
+          </ul>
+          <p class="note-line">기획·배치·대사는 직접, 구현은 Claude Code, 통합 검수는 Codex에 맡겼습니다.</p>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -218,6 +284,7 @@
   </div>
 </footer>
 
+<script src="assets/js/home.js?v=20261024c"></script>
 <script src="assets/js/wrap.js?v=20261021e"></script>
 </body>
 </html>

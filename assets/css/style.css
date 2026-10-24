@@ -584,7 +584,6 @@ a:focus-visible,.table-scroll:focus-visible,.chart-scroll:focus-visible{outline-
 @media(max-width:900px){.ai-feature{grid-template-columns:1fr}.ai-sub{grid-template-columns:160px 1fr}.ai-sub .go{display:none}}
 @media(max-width:640px){.ai-feature .af-body{padding:22px 20px}.stats{gap:6px}.stats li{padding:10px 10px 8px}.stats span{font-size:12px}.ai-sub{grid-template-columns:1fr}.ai-sub>div{padding:4px 18px 18px}}
 
-@media(prefers-reduced-motion:reduce){.hero-video video{display:none}}
 
 /* 2026-10-24b 데이터 사례: 그림 중심 (숫자 카드, 짧은 사실 카드, 두 칸 배치, 흐름도, 자세히 보기 접기) */
 .stats.stats-4{grid-template-columns:repeat(4,1fr);margin:40px 0 0}
@@ -622,3 +621,40 @@ details.more p:last-child{margin-bottom:0}
 .ai-feature{grid-template-columns:1.2fr 1fr}
 .ai-feature .stats b{font-size:23px;white-space:nowrap}
 @media(max-width:900px){.ai-feature{grid-template-columns:1fr}}
+
+/* 2026-10-24c 프로젝트: 스팀식 갤러리(제목줄 위 → 큰 화면 움짤 → 작은 사진 줄, 사진을 누르면 큰 화면이 그 사진으로 바뀜) + AI 활용 좌우 두 칸 */
+.pcards{gap:80px}
+.phead{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:18px}
+.phead .k{display:block;font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--accent)}
+.phead h3{font-size:clamp(26px,3.4vw,40px);margin:6px 0 8px;letter-spacing:-.035em;line-height:1.15}
+.phead h3 a{color:inherit;text-decoration:none}
+.phead h3 a:hover{color:var(--accent-ink)}
+.phead p{margin:0;color:var(--ink-2);font-size:16px;max-width:620px}
+.pbtns{flex:none;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.pbtns .btn{padding:10px 18px}
+.g-main{position:relative;aspect-ratio:16/9;background:#000;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+.g-main video,.g-main img{position:absolute;inset:0;width:100%;height:100%;border-radius:0}
+.g-main video{object-fit:cover}
+.g-main img{object-fit:contain}
+.g-main [hidden]{display:none}
+.g-thumbs{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:8px}
+.g-thumb{position:relative;display:block;width:100%;padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;background:#000;cursor:pointer;aspect-ratio:16/9;opacity:.62;transition:opacity .15s ease,border-color .15s ease}
+.g-thumb img{display:block;width:100%;height:100%;object-fit:cover;border-radius:0}
+.g-thumb:hover,.g-thumb:focus-visible{opacity:1}
+.g-thumb:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.g-thumb[aria-pressed="true"]{opacity:1;border-color:var(--accent)}
+.g-thumb .play{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:16px;background:rgba(0,0,0,.3);text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.section-head > div p{margin-top:10px}
+.ai-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.ai-card{display:flex;flex-direction:column;align-items:flex-start;gap:14px;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:28px}
+.ai-card .k{font-size:13px;font-weight:800;letter-spacing:.08em;color:var(--accent)}
+.ai-card h3{margin:-6px 0 0;font-size:clamp(22px,2.4vw,28px);letter-spacing:-.03em;line-height:1.25}
+.ai-card .ai-media{display:block;width:100%;aspect-ratio:5/3;border-radius:12px;overflow:hidden;background:#111;margin-top:6px}
+.ai-card .ai-media img{width:100%;height:100%;object-fit:cover;border-radius:0}
+.ai-card .ai-media.doc{background:#fff}
+.ai-card .ai-media.doc img{object-fit:contain}
+.ai-card .stats{width:100%;margin:0}
+.ai-card .stats b{font-size:clamp(20px,2vw,24px);white-space:nowrap}
+.ai-card .note-line{margin:auto 0 0;font-size:14px;color:var(--muted)}
+@media(max-width:900px){.phead{flex-direction:column;align-items:flex-start;gap:14px}.pbtns{justify-content:flex-start}.ai-pair{grid-template-columns:1fr}}
+@media(max-width:640px){.pcards{gap:56px}.g-thumbs{display:flex;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:4px}.g-thumb{flex:0 0 30%;scroll-snap-align:start}.pbtns .btn{padding:9px 14px;font-size:14px}.ai-card{padding:20px}}

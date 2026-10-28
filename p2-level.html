@@ -6,19 +6,19 @@
   <title>PANOPTICON: Breaking Point | 경원철 포트폴리오</title>
   <meta name="description" content="UE5 개인 레벨 PANOPTICON: Breaking Point의 구조, 페이싱, 핵심 장치">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261025a">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261028a">
 </head>
 <body><a class="skip-link" href="#main-content">본문 바로가기</a>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html"><b>경원철</b><span>CONTENT DESIGNER</span></a>
+    <a class="brand" href="index.html"><b>경원철</b><span>콘텐츠 기획자</span></a>
     <nav class="nav">
       <a href="index.html#projects">Projects</a>
       <a href="index.html#ai">AI 활용</a>
       <a href="index.html#docs">기획서</a>
       <a href="index.html#about" class="hide-sm">About</a>
-      <a class="nav-pr" href="https://drive.google.com/file/d/1PpBw2q_iCjKBQBAMTMLppfgNX7j-xgVZ/view" target="_blank" rel="noopener">PR 문서 ↗</a>
+      <a class="nav-pr i-ext" href="https://drive.google.com/file/d/1PpBw2q_iCjKBQBAMTMLppfgNX7j-xgVZ/view" target="_blank" rel="noopener">PR 문서</a>
     </nav>
   </div>
 </header>
@@ -27,10 +27,9 @@
   <div class="wrap">
     <div class="th-text">
       <a href="index.html#projects">← 전체 프로젝트</a>
-      <p>LEVEL DESIGN · UNREAL ENGINE 5</p>
       <h1><span class="cl">PANOPTICON:</span> <span class="cl">Breaking Point</span></h1>
       <p>재직 중 약 2개월 동안 만든 UE5 개인 레벨입니다.</p>
-      <p class="hero-sub"><span class="sn">높은 곳에서 내려다보는 감시자의 위압감과 공포를 레벨 전체의 축으로 잡았습니다.</span> <span class="sn"><span class="cl">배치·대사는 직접 하고,</span> <span class="cl">구현은 AI 도구에 지시했습니다.</span></span> <span class="sn"><a href="#role">AI 역할 분담 보기 ↓</a></span></p>
+      <p class="hero-sub"><span class="sn">높은 곳에서 내려다보는 감시자의 위압감과 공포를 레벨 전체의 축으로 잡았습니다.</span> <span class="sn"><span class="cl">배치·대사는 직접 하고,</span> <span class="cl">구현은 AI 도구에 지시했습니다.</span></span> <span class="sn"><a href="#role">AI 역할 분담 보기</a></span></p>
     </div>
     <figure class="th-media"><img src="assets/img/p2/p2-hdr-chase.jpg" alt="멸망한 상층부 길을 달리는 플레이어와 그 앞 하늘에서 내려다보는 키클롭스" width="1600" height="900"><figcaption>6구역 · 추격이 다시 시작된 상층부와 키클롭스 (8:41)</figcaption></figure>
   </div>
@@ -39,13 +38,13 @@
 <main id="main-content" class="case">
   <div class="wrap">
     <dl class="spec">
-      <div><dt>ENGINE</dt><dd>Unreal Engine 5</dd></div>
-      <div><dt>PERIOD</dt><dd>약 2개월 · 개인 작업</dd></div>
-      <div><dt>STRUCTURE</dt><dd>7구역 · 체크포인트 2곳</dd></div>
-      <div><dt>ROLE</dt><dd>지형·배치·대사 직접 / 구현은 AI 도구</dd></div>
+      <div><dt>엔진</dt><dd>Unreal Engine 5</dd></div>
+      <div><dt>기간</dt><dd>약 2개월 · 개인 작업</dd></div>
+      <div><dt>구성</dt><dd>7구역 · 체크포인트 2곳</dd></div>
+      <div><dt>역할</dt><dd>지형·배치·대사 직접 / 구현은 AI 도구</dd></div>
     </dl>
     <div class="links case-links">
-      <a class="btn btn-primary" href="https://youtu.be/rEV673Iu9ZM" target="_blank" rel="noopener">전체 플레이 영상 (13:29) ▶</a>
+      <a class="btn btn-primary i-play" href="https://youtu.be/rEV673Iu9ZM" target="_blank" rel="noopener">전체 플레이 영상 (13:29)</a>
     </div>
     <section id="play" class="block-play">
       <figure class="clip clip-wide">
@@ -55,27 +54,25 @@
     </section>
 
     <section id="structure">
-      <div class="num">STRUCTURE</div>
       <h2>7개 구역 레벨 구조</h2>
       <p><span class="cl">달동네에서 레이저 감시자 ‘키클롭스’에게 쫓기며 시작해,</span> <span class="cl">도시와 지하 수로에서 정보를 모으고,</span> <span class="cl">멸망한 상층부를 지나 연구소 옥상에서 코어를 부숩니다.</span></p>
       <figure><a class="zoom" href="assets/img/p2/p2-topview.jpg" target="_blank" rel="noopener" title="누르면 원본 크기로 열립니다"><img src="assets/img/p2/p2-topview.jpg" alt="레벨 탑뷰. 왼쪽 위 달동네에서 시작해 관문, 도시, 지하 수로, 공사장을 지나 오른쪽 위 상층부와 연구소로 이어지는 동선" loading="lazy" width="1600" height="1108"></a><figcaption>레벨 탑뷰 · 구역 색과 주 동선, 붉은 영역은 레이저 공격 범위</figcaption></figure>
       <div class="zone-grid">
-        <article class="zone"><img src="assets/img/p2/p2-z1-opening.jpg" alt="달동네 골목에서 레이저에 맞은 NPC가 흰 입자로 흩어지는 장면" loading="lazy" width="960" height="540"><div class="body"><div class="k">1 · 달동네</div><p><span class="sn">NPC 3명이 레이저에 사라지는 것을 보고 도시 쪽으로 도망칩니다.</span> <span class="sn">레이저 사망 연출을 여기서 보여 줍니다.</span></p></div></article>
-        <article class="zone"><img src="assets/img/p2/p2-z2-river.jpg" alt="강 샛길을 건너는 플레이어" loading="lazy" width="960" height="540"><div class="body"><div class="k">2 · 도시 관문</div><p><span class="cl">통행증이 없어 관문에서 거절당하고,</span> <span class="cl">노숙자의 도움으로 강 샛길을 지나 서치라이트를 피해 도시에 들어갑니다.</span></p></div></article>
-        <article class="zone"><img src="assets/img/p2/p2-z3-city.jpg" alt="네온 간판이 있는 도시 골목의 갱단 NPC" loading="lazy" width="960" height="540"><div class="body"><div class="k">3 · 도시</div><p><span class="cl">NPC들에게서 갱단과 레지스탕스,</span> <span class="cl">안개에 가려졌던 감시자의 모습이 드러납니다.</span></p></div></article>
-        <article class="zone"><img src="assets/img/p2/p2-z4-base.jpg?v=2" alt="지하의 바 형태 레지스탕스 본부" loading="lazy" width="960" height="540"><div class="body"><div class="k">4 · 지하 수로 · 본부</div><p>레지스탕스 본부에서 감시자의 이름 ‘키클롭스’를 알고 대항 무기를 얻습니다.</p></div></article>
-        <article class="zone"><img src="assets/img/p2/p2-z5-crane.jpg?v=2" alt="공사장 크레인을 조작해 컨테이너를 옮기는 장면" loading="lazy" width="960" height="540"><div class="body"><div class="k">5 · 공사장</div><p><span class="sn">동료와 함께 무기를 써 보며 크레인 이동 퍼즐을 풉니다.</span> <span class="sn">엘리베이터로 오르며 달동네가 파괴되는 모습을 봅니다.</span></p></div></article>
-        <article class="zone"><img src="assets/img/p2/p2-z6-chase.jpg" alt="멸망한 상층부 위에 떠서 광차를 조준하는 키클롭스" loading="lazy" width="960" height="540"><div class="body"><div class="k">6 · 멸망한 상층부</div><p><span class="sn">추격이 다시 시작됩니다.</span> <span class="sn">펀치와 레이저로 벽을 부수고 광차를 움직여 연구소로 갑니다.</span></p></div></article>
-        <article class="zone"><img src="assets/img/p2/p2-z7-faceoff.jpg" alt="옥상에서 차지 펀치 자세로 키클롭스와 마주 선 플레이어" loading="lazy" width="960" height="540"><div class="body"><div class="k">7 · 연구소 → 옥상</div><p><span class="cl">PC 기록으로 상층부가 멸망한 이유를 알고,</span> <span class="cl">옥상에서 키클롭스의 코어를 부숩니다.</span></p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z1-opening.jpg" alt="달동네 골목에서 레이저에 맞은 NPC가 흰 입자로 흩어지는 장면" loading="lazy" width="960" height="540"><div class="body"><div class="k">1구역 달동네</div><p><span class="sn">NPC 3명이 레이저에 사라지는 것을 보고 도시 쪽으로 도망칩니다.</span> <span class="sn">레이저 사망 연출을 여기서 보여 줍니다.</span></p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z2-river.jpg" alt="강 샛길을 건너는 플레이어" loading="lazy" width="960" height="540"><div class="body"><div class="k">2구역 도시 관문</div><p><span class="cl">통행증이 없어 관문에서 거절당하고,</span> <span class="cl">노숙자의 도움으로 강 샛길을 지나 서치라이트를 피해 도시에 들어갑니다.</span></p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z3-city.jpg" alt="네온 간판이 있는 도시 골목의 갱단 NPC" loading="lazy" width="960" height="540"><div class="body"><div class="k">3구역 도시</div><p><span class="cl">NPC들에게서 갱단과 레지스탕스,</span> <span class="cl">안개에 가려졌던 감시자의 모습이 드러납니다.</span></p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z4-base.jpg?v=2" alt="지하의 바 형태 레지스탕스 본부" loading="lazy" width="960" height="540"><div class="body"><div class="k">4구역 지하 수로·본부</div><p>레지스탕스 본부에서 감시자의 이름 ‘키클롭스’를 알고 대항 무기를 얻습니다.</p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z5-crane.jpg?v=2" alt="공사장 크레인을 조작해 컨테이너를 옮기는 장면" loading="lazy" width="960" height="540"><div class="body"><div class="k">5구역 공사장</div><p><span class="sn">동료와 함께 무기를 써 보며 크레인 이동 퍼즐을 풉니다.</span> <span class="sn">엘리베이터로 오르며 달동네가 파괴되는 모습을 봅니다.</span></p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z6-chase.jpg" alt="멸망한 상층부 위에 떠서 광차를 조준하는 키클롭스" loading="lazy" width="960" height="540"><div class="body"><div class="k">6구역 멸망한 상층부</div><p><span class="sn">추격이 다시 시작됩니다.</span> <span class="sn">펀치와 레이저로 벽을 부수고 광차를 움직여 연구소로 갑니다.</span></p></div></article>
+        <article class="zone"><img src="assets/img/p2/p2-z7-faceoff.jpg" alt="옥상에서 차지 펀치 자세로 키클롭스와 마주 선 플레이어" loading="lazy" width="960" height="540"><div class="body"><div class="k">7구역 연구소 → 옥상</div><p><span class="cl">PC 기록으로 상층부가 멸망한 이유를 알고,</span> <span class="cl">옥상에서 키클롭스의 코어를 부숩니다.</span></p></div></article>
       </div>
     </section>
 
     <section id="pacing">
-      <div class="num">PACING</div>
       <h2>시작부터 강렬한 긴장 곡선</h2>
       <p><span class="sn">레벨 디자인은 결국 플레이어의 감정 곡선을 설계하는 일이라고 생각합니다.</span> <span class="sn"><span class="cl">처음부터 끝까지 긴장만 이어지면 플레이어는 큰 스트레스를 받거나,</span> <span class="cl">반대로 적응해서 지루해합니다.</span></span> <span class="sn"><span class="cl">그래서 플레이로 긴장을 높이는 구간은 1구역 달동네 도주와 6구역 상층부 추격(광차) 두 곳에 두고,</span> <span class="cl">그 사이를 정보 수집과 휴식,</span> <span class="cl">무기 연습에 썼습니다.</span></span> <span class="sn">마지막은 전투 대신 코어를 부수는 컷신 한 번으로 마무리합니다.</span></p>
       <div class="chart-scroll" tabindex="0" role="region" aria-label="구간별 긴장 그래프, 가로 스크롤 가능"><svg viewBox="0 0 1200 470" xmlns="http://www.w3.org/2000/svg" role="img" class="pacing-svg" aria-labelledby="pacing-title pacing-desc" font-family="Pretendard Variable, Malgun Gothic, sans-serif">
-<title id="pacing-title">PANOPTICON 페이싱 — 최종 플레이 영상 시간축의 긴장 등급</title>
+<title id="pacing-title">PANOPTICON 페이싱: 최종 플레이 영상 시간축의 긴장 등급</title>
 <desc id="pacing-desc">0(휴식)에서 5(절정·사망)까지의 긴장 등급을 7개 구역의 시간 흐름에 따라 표시한 계단형 그래프. 등급 5는 1구역 레이저 사망, 6구역 낙사와 광차 정지 QTE 컷신, 7구역 코어 파괴에 있다.</desc>
 <rect x="151.0" y="18" width="110.0" height="8" rx="4" fill="#2a78d6"/>
 <defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#666761" stroke-width="1.5"/></pattern></defs>
@@ -172,7 +169,6 @@
     </section>
 
     <section id="devices">
-      <div class="num">KEY DEVICES</div>
       <h2>레벨 핵심 장치 3종</h2>
       <div class="device-grid three">
         <div class="device"><img src="assets/img/p2/p2-z1-laser-death.jpg" alt="레이저 발사로 벽이 무너지는 장면" loading="lazy" width="960" height="540"><div class="k">레이저 감시자</div><p><span class="sn">붉은 추적선이 노란 고정선으로 바뀐 뒤 빔이 나갑니다.</span> <span class="sn">어느 구역에서나 맞으면 즉사합니다.</span> <span class="sn"><span class="cl">6구역에서는 이 레이저로 벽을 부수고 광차를 움직이지만,</span> <span class="cl">피하기는 오히려 더 어렵습니다.</span></span></p></div>
@@ -182,7 +178,6 @@
     </section>
 
     <section id="revision">
-      <div class="num">DESIGN CASES</div>
       <h2>레벨 디자인 사례 3건</h2>
 
       <h3 class="case-title">1. 보이지 않는 공포와 높이의 압도감</h3>
@@ -216,7 +211,6 @@
     </section>
 
     <section id="role">
-      <div class="num">ROLE</div>
       <h2>직접 설계와 AI 구현의 역할 분담</h2>
       <p><span class="cl">레벨 디자이너의 일은 제가 직접 하고,</span> <span class="cl">시스템 구현·최적화·아트 제작처럼 다른 직군이 맡을 일은 AI 코딩 도구에 지시한 뒤 결과를 검수했습니다.</span></p>
       <table class="t t-fluid"><tbody>
